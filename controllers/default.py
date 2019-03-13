@@ -229,7 +229,7 @@ def download():
 
 # si for maior que 29 caracteres abreviar el segundo Nombre
 @auth.requires_login()
-def Abreviarr(nombre):
+def Abreviar(nombre):
 
     cant=len(nombre)
     nombreOriginal=nombre.strip(' ')
