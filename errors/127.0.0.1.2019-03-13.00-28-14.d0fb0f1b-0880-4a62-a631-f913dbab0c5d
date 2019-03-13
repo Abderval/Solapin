@@ -1,0 +1,885 @@
+(dp1
+S'output'
+p2
+S"<type 'exceptions.IndexError'> list index out of range"
+p3
+sS'layer'
+p4
+S'C:\\Users\\Rosario\\PycharmProjects\\Solapin\\web2py\\applications\\Solapin\\views\\default/generarvarios.html'
+p5
+sS'code'
+p6
+S'response.write(\'\\n<!DOCTYPE html>\\n<html lang="en">\\n<head>\\n    <!--\\n        ===\\n        This comment should NOT be removed.\\n\\n        Charisma v2.0.0\\n\\n        Copyright 2012-2014 Muhammad Usman\\n        Licensed under the Apache License v2.0\\n        http://www.apache.org/licenses/LICENSE-2.0\\n\\n        http://usman.it\\n        http://twitter.com/halalit_usman\\n        ===\\n    -->\\n  <meta charset="utf-8" />\\n    <title>\', escape=False)\nresponse.write(response.title or request.application)\nresponse.write(\'</title>\\n\\n    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />\\n\\t\\t\\t<meta name="description" content="overview &amp; stats" />\\n\\t\\t<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />\\n\\n\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'css/web2py-bootstrap4.css\'))\nresponse.write(\'"/>\\n    <link rel="shortcut icon" href="\', escape=False)\nresponse.write(URL(\'static\',\'images/favicon.ico\'))\nresponse.write(\'" type="image/x-icon">\\n    <link rel="apple-touch-icon" href="\', escape=False)\nresponse.write(URL(\'static\',\'images/favicon.png\'))\nresponse.write(\'">\\n\\n\\n    <!-- bootstrap & fontawesome -->\\n\\t\\t<link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'assets/css/bootstrap.min.css\'))\nresponse.write(\'" />\\n\\t\\t<link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'assets/font-awesome/4.5.0/css/font-awesome.min.css\'))\nresponse.write(\'" />\\n\\n\\t\\t<!-- page specific plugin styles -->\\n\\n\\t\\t<!-- text fonts -->\\n\\t\\t<link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'assets/css/fonts.googleapis.com.css\'))\nresponse.write(\'" />\\n\\n\\t\\t<!-- ace styles -->\\n\\t\\t<link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'assets/css/ace.min.css\'))\nresponse.write(\'" class="ace-main-stylesheet" id="main-ace-style" />\\n\\n\\t\\t<!--[if lte IE 9]>\\n\\t\\t\\t<link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'assets/css/ace-part2.min.css" class="ace-main-stylesheet\'))\nresponse.write(\'" />\\n\\t\\t<![endif]-->\\n\\t\\t<link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'assets/css/ace-skins.min.css\'))\nresponse.write(\'" />\\n\\t\\t<link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'assets/css/ace-rtl.min.css\'))\nresponse.write(\'" />\\n\\t\\t<link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'css/sb-admin-2.css\'))\nresponse.write(\'" />\\n <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'assets/solapin.css\'))\nresponse.write(\'"/>\\n\\t\\t<!--[if lte IE 9]>\\n\\t\\t  <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'assets/css/ace-ie.min.css\'))\nresponse.write(\'" />\\n\\t\\t<![endif]-->\\n\\n\\t\\t<!-- inline styles related to this page -->\\n\\n\\t\\t<!-- ace settings handler -->\\n\\t\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/ace-extra.min.js\'))\nresponse.write(\'"></script>\\n\\n\\t\\t<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->\\n\\n\\t\\t<!--[if lte IE 8]>\\n\\t\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/html5shiv.min.js\'))\nresponse.write(\'"></script>\\n\\t\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/respond.min.js\'))\nresponse.write(\'"></script>\\n\\t\\t<![endif]-->\\n\\n     <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->\\n\\n    <!-- The fav icon -->\\n    <link rel="shortcut icon" href="img/favicon.ico">\\n\\n    <!-- All JavaScript at the bottom, except for Modernizr which enables\\n         HTML5 elements & feature detects -->\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/modernizr-2.8.3.min.js\'))\nresponse.write(\'"></script>\\n    <!-- Favicons -->\\n\', escape=False)\nresponse.write(\'<script type="text/javascript"><!--\\n    // These variables are used by the web2py_ajax_init function in web2py_ajax.js (which is loaded below).\\n    \', escape=False)\nresponse.write(ASSIGNJS(\nw2p_ajax_confirm_message = T(\'Are you sure you want to delete this object?\'),\nw2p_ajax_disable_with_message = T(\'Working...\'),\nw2p_ajax_date_format = T(\'%Y-%m-%d\'),\nw2p_ajax_datetime_format = T(\'%Y-%m-%d %H:%M:%S\'),\najax_error_500 = T.M(\'An error occured, please [[reload %s]] the page\') % URL(args=request.args, vars=request.get_vars)\n))\nresponse.write(\'\\n    //--></script>\\n\', escape=False)\nresponse.files.insert(0,URL(\'static\',\'js/jquery.js\'))\nresponse.files.insert(1,URL(\'static\',\'css/calendar.css\'))\nresponse.files.insert(2,URL(\'static\',\'js/calendar.js\'))\nresponse.files.insert(3,URL(\'static\',\'js/web2py.js\'))\nresponse.include_meta()\nresponse.include_files()\nresponse.write(\'\\n\', escape=False)\nresponse.write(\' <!-- this includes jquery.js, calendar.js/.css and web2py.js -->\\n\\n\', escape=False)\nresponse.write(\'\\n\', escape=False)\nresponse.write(\'\\n</head>\\n\\n<body class="no-skin">\\n   \', escape=False)\nresponse.write(\'<div id="navbar" class="navbar navbar-default          ace-save-state">\\n\\t\\t\\t<div class="navbar-container ace-save-state" id="navbar-container">\\n\\t\\t\\t\\t<button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">\\n\\t\\t\\t\\t\\t<span class="sr-only">Toggle sidebar</span>\\n\\n\\t\\t\\t\\t\\t<span class="icon-bar"></span>\\n\\n\\t\\t\\t\\t\\t<span class="icon-bar"></span>\\n\\n\\t\\t\\t\\t\\t<span class="icon-bar"></span>\\n\\t\\t\\t\\t</button>\\n\\n\\t\\t\\t\\t<div class="navbar-header pull-left">\\n\\t\\t\\t\\t\\t<a href="index.html" class="navbar-brand">\\n\\t\\t\\t\\t\\t\\t<small>\\n\\t\\t\\t\\t\\t\\t\\t<i class="fa fa-leaf"></i>\\n\\t\\t\\t\\t\\t\\t\\tCERBERO\\n\\t\\t\\t\\t\\t\\t</small>\\n\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t</div>\\n\\n\\t\\t\\t\\t<div class="navbar-buttons navbar-header pull-right" role="navigation">\\n\\t\\t\\t\\t\\t<ul class="nav ace-nav">\\n\\t\\t\\t\\t\\t\\t<li class="grey dropdown-modal">\\n\\t\\t\\t\\t\\t\\t\\t<a data-toggle="dropdown" class="dropdown-toggle" href="#">\\n\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-tasks"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t<span class="badge badge-grey">4</span>\\n\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">\\n\\t\\t\\t\\t\\t\\t\\t\\t<li class="dropdown-header">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-check"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t4 Tasks to complete\\n\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<li class="dropdown-content">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<ul class="dropdown-menu dropdown-navbar">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="#">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="clearfix">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="pull-left">Software Update</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="pull-right">65%</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="progress progress-mini">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div style="width:65%" class="progress-bar"></div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="#">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="clearfix">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="pull-left">Hardware Upgrade</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="pull-right">35%</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="progress progress-mini">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div style="width:35%" class="progress-bar progress-bar-danger"></div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="#">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="clearfix">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="pull-left">Unit Testing</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="pull-right">15%</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="progress progress-mini">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div style="width:15%" class="progress-bar progress-bar-warning"></div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="#">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="clearfix">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="pull-left">Bug Fixes</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="pull-right">90%</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="progress progress-mini progress-striped active">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div style="width:90%" class="progress-bar progress-bar-success"></div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<li class="dropdown-footer">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="#">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tSee tasks with details\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-arrow-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t<li class="purple dropdown-modal">\\n\\t\\t\\t\\t\\t\\t\\t<a data-toggle="dropdown" class="dropdown-toggle" href="#">\\n\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-bell icon-animated-bell"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t<span class="badge badge-important">\', escape=False)\nresponse.write(db(db.act_persona).count())\nresponse.write(\'</span>\\n\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t<ul class="dropdown-menu-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">\\n\\t\\t\\t\\t\\t\\t\\t\\t<li class="dropdown-header">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-exclamation-triangle"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t8 Notifications\\n\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<li class="dropdown-content">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<ul class="dropdown-menu dropdown-navbar navbar-pink">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="#">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="clearfix">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="pull-left">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="btn btn-xs no-hover btn-pink fa fa-comment"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tNew Comments\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="pull-right badge badge-info">+12</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="#">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="btn btn-xs btn-primary fa fa-user"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tBob just signed up as an editor ...\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="#">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="clearfix">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="pull-left">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="btn btn-xs no-hover btn-success fa fa-shopping-cart"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tNew Orders\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="pull-right badge badge-success">+8</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="#">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="clearfix">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="pull-left">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="btn btn-xs no-hover btn-info fa fa-twitter"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tFollowers\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="pull-right badge badge-info">+11</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<li class="dropdown-footer">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="#">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tSee all notifications\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-arrow-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t<li class="green dropdown-modal">\\n\\t\\t\\t\\t\\t\\t\\t<a data-toggle="dropdown" class="dropdown-toggle" href="#">\\n\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-envelope icon-animated-vertical"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t<span class="badge badge-success">5</span>\\n\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t<ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">\\n\\t\\t\\t\\t\\t\\t\\t\\t<li class="dropdown-header">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-envelope-o"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t5 Messages\\n\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<li class="dropdown-content">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<ul class="dropdown-menu dropdown-navbar">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="#" class="clearfix">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<img src="assets/images/avatars/avatar.png" class="msg-photo" alt="Alex\\\'s Avatar" />\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="msg-body">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="msg-title">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="blue">Alex:</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tCiao sociis natoque penatibus et auctor ...\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="msg-time">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-clock-o"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span>a moment ago</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="#" class="clearfix">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<img src="assets/images/avatars/avatar3.png" class="msg-photo" alt="Susan\\\'s Avatar" />\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="msg-body">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="msg-title">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="blue">Susan:</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tVestibulum id ligula porta felis euismod ...\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="msg-time">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-clock-o"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span>20 minutes ago</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="#" class="clearfix">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<img src="assets/images/avatars/avatar4.png" class="msg-photo" alt="Bob\\\'s Avatar" />\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="msg-body">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="msg-title">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="blue">Bob:</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tNullam quis risus eget urna mollis ornare ...\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="msg-time">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-clock-o"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span>3:15 pm</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="#" class="clearfix">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<img src="assets/images/avatars/avatar2.png" class="msg-photo" alt="Kate\\\'s Avatar" />\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="msg-body">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="msg-title">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="blue">Kate:</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tCiao sociis natoque eget urna mollis ornare ...\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="msg-time">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-clock-o"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span>1:33 pm</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="#" class="clearfix">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<img src="assets/images/avatars/avatar5.png" class="msg-photo" alt="Fred\\\'s Avatar" />\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="msg-body">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="msg-title">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="blue">Fred:</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tVestibulum id penatibus et auctor  ...\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span class="msg-time">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-clock-o"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span>10:09 am</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<li class="dropdown-footer">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="inbox.html">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tSee all messages\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-arrow-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t\\t</li>\\n                         \', escape=False)\nif auth.user:\n    response.write(\'\\n\\t\\t\\t\\t\\t\\t<li class="light-blue dropdown-modal">\\n\\t\\t\\t\\t\\t\\t\\t<a data-toggle="dropdown" href="#" class="dropdown-toggle">\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<span class="user-info">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<small>Bienvenido,</small>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\', escape=False)\n    response.write(auth.user.first_name)\n    response.write(\'\\n\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-caret-down"></i>\\n\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t<ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">\\n\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="profile.html">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-user"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tPerfil\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<li class="divider"></li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\n    response.write(URL(\'default\',\'user/logout\'))\n    response.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-power-off"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tSalir\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\t\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\', escape=False)\n    pass\nresponse.write(\'\\n\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t</div>\\n\\t\\t\\t</div><!-- /.navbar-container -->\\n\\t\\t</div>\\n\', escape=False)\nresponse.write(\'\\n\\n<div class="main-container ace-save-state" id="main-container">\\n\\t\\t\\t<script type="text/javascript">\\n\\t\\t\\t\\ttry{ace.settings.loadState(\\\'main-container\\\')}catch(e){}\\n\\t\\t\\t</script>\\n\\n\\t\\t\\t<div id="sidebar" class="sidebar responsive ace-save-state">\\n\\t\\t\\t\\t<script type="text/javascript">\\n\\t\\t\\t\\t\\ttry{ace.settings.loadState(\\\'sidebar\\\')}catch(e){}\\n\\t\\t\\t\\t</script>\\n\\n\\t\\t\\t\\t<div class="sidebar-shortcuts" id="sidebar-shortcuts">\\n\\t\\t\\t\\t\\t<div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">\\n\\t\\t\\t\\t\\t\\t<button class="btn btn-success">\\n\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-signal"></i>\\n\\t\\t\\t\\t\\t\\t</button>\\n\\n\\t\\t\\t\\t\\t\\t<button class="btn btn-info">\\n\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-pencil"></i>\\n\\t\\t\\t\\t\\t\\t</button>\\n\\n\\t\\t\\t\\t\\t\\t<button class="btn btn-warning">\\n\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-users"></i>\\n\\t\\t\\t\\t\\t\\t</button>\\n\\n\\t\\t\\t\\t\\t\\t<button class="btn btn-danger">\\n\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-cogs"></i>\\n\\t\\t\\t\\t\\t\\t</button>\\n\\t\\t\\t\\t\\t</div>\\n\\n\\t\\t\\t\\t\\t<div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">\\n\\t\\t\\t\\t\\t\\t<span class="btn btn-success"></span>\\n\\n\\t\\t\\t\\t\\t\\t<span class="btn btn-info"></span>\\n\\n\\t\\t\\t\\t\\t\\t<span class="btn btn-warning"></span>\\n\\n\\t\\t\\t\\t\\t\\t<span class="btn btn-danger"></span>\\n\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t</div><!-- /.sidebar-shortcuts -->\\n\\n\\t\\t\\t\\t<ul class="nav nav-list">\\n\\t\\t\\t\\t\\t<li class="active">\\n\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'default\',\'index\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-tachometer"></i>\\n\\t\\t\\t\\t\\t\\t\\t<span class="menu-text"> Inicio </span>\\n\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t</li>\\n\\t                <li class="">\\n\\t\\t\\t\\t\\t\\t<a href="#" class="dropdown-toggle">\\n\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon glyphicon \\tglyphicon-qrcode"></i>\\n\\t\\t\\t\\t\\t\\t\\t<span class="menu-text">\\n\\t\\t\\t\\t\\t\\t\\t\\tGestionar Solapin\\n\\t\\t\\t\\t\\t\\t\\t</span>\\n\\n\\t\\t\\t\\t\\t\\t\\t<b class="arrow fa fa-angle-down"></b>\\n\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\n\\t\\t\\t\\t\\t\\t<ul class="submenu">\\n\\n                            <li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'default\',\'generarvarios\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tGenerar v\\xc3\\xa1rios\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t  <li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'default\',\'generarporarea\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tGenerar x area\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t  <li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'default\',\'generarpagina\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tGenerar por pagina\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\n\\t\\t\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'default\',\'generartodos\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tGenerar Todos\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\n\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t<a href="#" class="dropdown-toggle">\\n\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon glyphicon glyphicon-user"></i>\\n\\t\\t\\t\\t\\t\\t\\t<span class="menu-text">\\n\\t\\t\\t\\t\\t\\t\\t\\tGestionar Personas\\n\\t\\t\\t\\t\\t\\t\\t</span>\\n\\n\\t\\t\\t\\t\\t\\t\\t<b class="arrow fa fa-angle-down"></b>\\n\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\n\\t\\t\\t\\t\\t\\t<ul class="submenu">\\n\\n\\t\\t\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'persona\',\'crear\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tCrear nuevo\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'persona\',\'admin\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tAdministrar\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t<a href="#" class="dropdown-toggle">\\n\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon glyphicon glyphicon-user"></i>\\n\\t\\t\\t\\t\\t\\t\\t<span class="menu-text"> Gestionar T Persona </span>\\n\\n\\t\\t\\t\\t\\t\\t\\t<b class="arrow fa fa-angle-down"></b>\\n\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\n\\t\\t\\t\\t\\t\\t<ul class="submenu">\\n\\t\\t\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'tipopersona\',\'crear\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tCrear nuevo\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'tipopersona\',\'admin\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tAdministrar\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\n\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t<a href="#" class="dropdown-toggle">\\n\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon glyphicon glyphicon-home"></i>\\n\\t\\t\\t\\t\\t\\t\\t<span class="menu-text"> Gestionar Area </span>\\n\\n\\t\\t\\t\\t\\t\\t\\t<b class="arrow fa fa-angle-down"></b>\\n\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\n\\t\\t\\t\\t\\t\\t<ul class="submenu">\\n\\t\\t\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'area\',\'crear\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tCrear nuevo\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'area\',\'admin\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tAdministrar\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t<a href="#" class="dropdown-toggle">\\n\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon glyphicon glyphicon-home"></i>\\n\\t\\t\\t\\t\\t\\t\\t<span class="menu-text"> Gestionar Sub-area </span>\\n\\n\\t\\t\\t\\t\\t\\t\\t<b class="arrow fa fa-angle-down"></b>\\n\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\n\\t\\t\\t\\t\\t\\t<ul class="submenu">\\n\\t\\t\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'subarea\',\'crear\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tCrear nuevo\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'subarea\',\'admin\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tAdministrar\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'Vehiculo\',\'admin\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-calendar"></i>\\n\\n\\t\\t\\t\\t\\t\\t\\t<span class="menu-text">\\n\\t\\t\\t\\t\\t\\t\\t\\tGestionar Vehiculo\\n\\n\\n\\t\\t\\t\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'tipovehiculo\',\'admin\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-picture-o"></i>\\n\\t\\t\\t\\t\\t\\t\\t<span class="menu-text"> Gestionar T Vehiculo </span>\\n\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t</li>\\n\\n\\n\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'nacionalidad\',\'admin\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-globe"></i>\\n\\t\\t\\t\\t\\t\\t\\t<span class="menu-text">Gestionar Pa\\xc3\\xads</span>\\n\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t</li>\\n\\n\\n\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t<a href="#" class="dropdown-toggle">\\n\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-users"></i>\\n\\t\\t\\t\\t\\t\\t\\t<span class="menu-text">\\n\\t\\t\\t\\t\\t\\t\\t\\tGestionar Usuario\\n\\t\\t\\t\\t\\t\\t\\t</span>\\n\\n\\t\\t\\t\\t\\t\\t\\t<b class="arrow fa fa-angle-down"></b>\\n\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\n\\t\\t\\t\\t\\t\\t<ul class="submenu">\\n\\n                            <li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'usuario\',\'crear\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tCrear nuevo\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t\\t\\t\\t  <li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'usuario\',\'admin\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tAdministrar Usuario\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t  </li>\\n\\n\\n\\t\\t\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'usuario\',\'crearRol\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tCrear Rol\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'usuario\',\'gestionar_rol\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-caret-right"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tAdministrar Rol\\n\\t\\t\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\n\\n\\t\\t\\t\\t\\t\\t</ul>\\n\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t<li class="">\\n\\t\\t\\t\\t\\t\\t<a href="\', escape=False)\nresponse.write(URL(\'importarcsv\',\'importarcsv\'))\nresponse.write(\'">\\n\\t\\t\\t\\t\\t\\t\\t<i class="menu-icon fa fa-book "></i>\\n\\t\\t\\t\\t\\t\\t\\t<span class="menu-text"> Importar CSV </span>\\n\\t\\t\\t\\t\\t\\t</a>\\n\\n\\t\\t\\t\\t\\t\\t<b class="arrow"></b>\\n\\t\\t\\t\\t\\t</li>\\n\\n\\t\\t\\t\\t</ul><!-- /.nav-list -->\\n\\n\\t\\t\\t\\t<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">\\n\\t\\t\\t\\t\\t<i id="sidebar-toggle-icon" class="ace-icon fa fa-angle-double-left ace-save-state" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>\\n\\t\\t\\t\\t</div>\\n\\t\\t\\t</div>\\n\\n\\t\\t\\t<div class="main-content">\\n\\t\\t\\t\\t<div class="main-content-inner">\\n\\t\\t\\t\\t\\t<div class="breadcrumbs ace-save-state" id="breadcrumbs">\\n\\t\\t\\t\\t\\t\\t<ul class="breadcrumb">\\n\\t\\t\\t\\t\\t\\t\\t<li>\\n\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-home home-icon"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t<a href=\', escape=False)\nresponse.write(URL(\'default\',\'index\'))\nresponse.write(\'>Inicio</a>\\n\\t\\t\\t\\t\\t\\t\\t</li>\\n\\t\\t\\t\\t\\t\\t\\t<li class="active">Inicio</li>\\n\\t\\t\\t\\t\\t\\t</ul><!-- /.breadcrumb -->\\n\\n\\t\\t\\t\\t\\t\\t<div class="nav-search" id="nav-search">\\n\\t\\t\\t\\t\\t\\t\\t<form class="form-search">\\n\\t\\t\\t\\t\\t\\t\\t\\t<span class="input-icon">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-search nav-search-icon"></i>\\n\\t\\t\\t\\t\\t\\t\\t\\t</span>\\n\\t\\t\\t\\t\\t\\t\\t</form>\\n\\t\\t\\t\\t\\t\\t</div><!-- /.nav-search -->\\n\\t\\t\\t\\t\\t</div>\\n\\n\\t\\t\\t\\t\\t<div class="page-content">\\n\\t\\t\\t\\t\\t\\t<div class="ace-settings-container" id="ace-settings-container">\\n\\t\\t\\t\\t\\t\\t\\t<div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">\\n\\t\\t\\t\\t\\t\\t\\t\\t<i class="ace-icon fa fa-cog bigger-130"></i>\\n\\t\\t\\t\\t\\t\\t\\t</div>\\n\\n\\t\\t\\t\\t\\t\\t\\t<div class="ace-settings-box clearfix" id="ace-settings-box">\\n\\t\\t\\t\\t\\t\\t\\t\\t<div class="pull-left width-50">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="ace-settings-item">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="pull-left">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<select id="skin-colorpicker" class="hide">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<option data-skin="no-skin" value="#438EB9">#438EB9</option>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<option data-skin="skin-1" value="#222A2D">#222A2D</option>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<option data-skin="skin-2" value="#C6487E">#C6487E</option>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</select>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<span>&nbsp; Choose Skin</span>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="ace-settings-item">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-navbar" autocomplete="off" />\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="ace-settings-item">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-sidebar" autocomplete="off" />\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="ace-settings-item">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-breadcrumbs" autocomplete="off" />\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="ace-settings-item">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" autocomplete="off" />\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="ace-settings-item">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<input type="checkbox" class="ace ace-checkbox-2 ace-save-state" id="ace-settings-add-container" autocomplete="off" />\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<label class="lbl" for="ace-settings-add-container">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tInside\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<b>.container</b>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t</label>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div><!-- /.pull-left -->\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<div class="pull-left width-50">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="ace-settings-item">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-hover" autocomplete="off" />\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<label class="lbl" for="ace-settings-hover"> Submenu on Hover</label>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="ace-settings-item">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-compact" autocomplete="off" />\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<label class="lbl" for="ace-settings-compact"> Compact Sidebar</label>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t<div class="ace-settings-item">\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-highlight" autocomplete="off" />\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t<label class="lbl" for="ace-settings-highlight"> Alt. Active Item</label>\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t\\t\\t\\t\\t</div><!-- /.pull-left -->\\n\\t\\t\\t\\t\\t\\t\\t</div><!-- /.ace-settings-box -->\\n\\t\\t\\t\\t\\t\\t</div><!-- /.ace-settings-container -->\\n\\n\\n\\n\\t\\t\\t\\t\\t\\t<div class="row">\\n\\t\\t\\t\\t\\t\\t\\t<div class="col-xs-12">\\n\\t\\t\\t\\t\\t\\t\\t\\t<!-- PAGE CONTENT BEGINS -->\\n<!--aqui vai o banner rosairo jajajaj-->\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\', escape=False)\nresponse.write(\'\\r\\n<html>\\r\\n<head>\\r\\n      <meta charset="utf-8" />\\r\\n\\r\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'assets/solapin.css\'))\nresponse.write(\'"/>\\r\\n\\r\\n    <!-- page specific plugin styles -->\\r\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'assets/css/bootstrap-duallistbox.min.css\'))\nresponse.write(\'"/>\\r\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'assets/css/bootstrap-multiselect.min.css\'))\nresponse.write(\'"/>\\r\\n    <link rel="stylesheet" href="\', escape=False)\nresponse.write(URL(\'static\',\'assets/css/select2.min.css\'))\nresponse.write(\'"/>\\r\\n\\r\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/jspdf/html2pdf.min.js\'))\nresponse.write(\'"></script>\\r\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/jspdf/html2canvas.js\'))\nresponse.write(\'"></script>\\r\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/jspdf/jspdf.min.js\'))\nresponse.write(\'"></script>\\r\\n    <script type="text/javascript">\\r\\n        $(".my_select_box").chosen({\\r\\n            placeholder_text_multiple: 10,\\r\\n            no_results_text: "Oops, nothing found!",\\r\\n            width: "95%"\\r\\n        });\\r\\n        function genPDF2() {\\r\\n            var element = document.getElementById(\\\'jqSegmentedDisplay\\\');\\r\\n            var opt = {\\r\\n                margin: [0, 0, 0.1, 0],\\r\\n                padding: [0, 0.5, 0, 0],\\r\\n                filename: \\\'solapin.pdf\\\',\\r\\n                image: {type: \\\'jpeg\\\', quality: 1},\\r\\n                html2canvas: {scale: 3},\\r\\n                jsPDF: {unit: \\\'in\\\', format: \\\'letter\\\', orientation: \\\'portrait\\\'}\\r\\n            };\\r\\n// New Promise-based usage:\\r\\n            html2pdf().from(element).set(opt).save();\\r\\n// Old monolithic-style usage:\\r\\n            // html2pdf(element, opt);\\r\\n        }\\r\\n    </script>\\r\\n    <title>T\\xc3\\xadtulo de la p\\xc3\\xa1gina</title>\\r\\n\\r\\n</head>\\r\\n<body>\\r\\n<label style="font-size: large">Por favor digitar el numero de identificacion a generar</label>\\r\\n\', escape=False)\nresponse.write(nombre[0])\nresponse.write(\'\\r\\n<br>\\r\\n<form method="post" class="form-horizontal" role="form">\\r\\n    <label class="control-label no-padding-right"> Seleccionar Personas </label>\\r\\n\\r\\n        <select multiple="multiple" id="state" name="ci" class="select2" data-placeholder="Digite el nombre...">\\r\\n        \', escape=False)\nfor persona in personas:\n    response.write(\'\\r\\n            <option value="\', escape=False)\n    response.write(persona.ci)\n    response.write(\'">\', escape=False)\n    response.write(persona.nombre +" "+ persona.apellidos)\n    response.write(\'</option>\\r\\n        \', escape=False)\n    pass\nresponse.write(\'\\r\\n        </select>\\r\\n\\r\\n    <input class="btn btn-primary radius-4 " type="submit" value="Generar Solapin">\\r\\n</form>\\r\\n\\r\\n<a href="javascript:genPDF2()"  class="btn btn-primary radius-4">\\r\\n    Generar PDF\\r\\n    <i class="ace-icon fa fa-cog bigger-130"></i></a>\\r\\n\\r\\n<hr>\\r\\n<div id="jqSegmentedDisplay">\\r\\n\\r\\n\', escape=False)\nfor i in range(0,cantSolapin):\n    response.write(\'\\r\\n\', escape=False)\n    #for i in range(1,30):\n    response.write(\'\\r\\n\\r\\n    <div id="solapin">\\r\\n    \', escape=False)\n    response.write(DIV(IMG(_src = URL("static", "imgsolapin/fundo.png"), _width = "210", _height = "322",_id="imgSolapin"),_id="fundo"))\n    response.write(\'\\r\\n        \', escape=False)\n    response.write(DIV(IMG(_src = URL("static", "imgsolapin/fundoFoto.png"), _width = "119", _height = "140",_id="imgSolapin"),_id="fundoFoto"))\n    response.write(\'\\r\\n        \', escape=False)\n    response.write(DIV(IMG(_src = URL("download", args=foto[i]), _width = "116", _height = "126",_id="imgSolapin"),_id="foto"))\n    response.write(\'\\r\\n        \', escape=False)\n    if ((categoria[i]==\'Becado Nacional\') or( categoria[i]==\'Seminterno\' ) or (categoria[i]==\'Becado Extranjero Convenio\') or categoria[i]==\'Becado Extranjero Autofinanciado\' ):\n        response.write(\'\\r\\n        \', escape=False)\n        response.write(DIV(IMG(_src = URL("static", "imgsolapin/lateralIzquierdo.png")),_id="lateralIzquierdo"))\n        response.write(\'\\r\\n        \', escape=False)\n        response.write(DIV(B(\'E\', id=\'lateralDerecho\',_class=\'test\', _id=\'lateralDerecho\')))\n        response.write(\'\\r\\n        \', escape=False)\n    elif categoria[i]==\'Trabajador\':\n        response.write(\'\\r\\n        \', escape=False)\n        response.write(DIV(IMG(_src = URL("static", "imgsolapin/lateralIzquierdo.png")),_id="lateralIzquierdo"))\n        response.write(\'\\r\\n        \', escape=False)\n        response.write(DIV(B(\'T\', id=\'lateralDerecho\',_class=\'test\', _id=\'lateralDerecho\')))\n        response.write(\'\\r\\n        \', escape=False)\n    else:\n        response.write(\'\\r\\n        \', escape=False)\n        response.write(DIV(IMG(_src = URL("static", "imgsolapin/lateralIzquierdo.png")),_id="lateralIzquierdo"))\n        response.write(\'\\r\\n        \', escape=False)\n        response.write(DIV(B(\'P\', id=\'lateralDerecho\',_class=\'test\', _id=\'lateralDerecho\')))\n        response.write(\'\\r\\n        \', escape=False)\n        pass\n    response.write(\'\\r\\n\\r\\n        \', escape=False)\n    response.write(DIV(P(nombre[i]),_id="nombre"))\n    response.write(\'\\r\\n        \', escape=False)\n    response.write(DIV(IMG(_src = URL("static", "imgsolapin/linea.png")),_id="linea"))\n    response.write(\'\\r\\n        \', escape=False)\n    response.write(DIV(IMG(_src = URL("static", "imgsolapin/unicaLateral.png"),_height="129"),_id="unicaLateral"))\n    response.write(\'\\r\\n        \', escape=False)\n    response.write(DIV(IMG(_src =solapin[i],_width="121",_height="121"),_id="qr"))\n    response.write(\'\\r\\n\\r\\n    </div>\\r\\n\', escape=False)\n    pass\nresponse.write(\'\\r\\n</div>\\r\\n\\r\\n\\r\\n<!-- page specific plugin scripts -->\\r\\n<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/jquery.bootstrap-duallistbox.min.js\'))\nresponse.write(\'"></script>\\r\\n<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/jquery.raty.min.js\'))\nresponse.write(\'"></script>\\r\\n<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/bootstrap-multiselect.min.js\'))\nresponse.write(\'"></script>\\r\\n<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/select2.min.js\'))\nresponse.write(\'"></script>\\r\\n<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/jquery-typeahead.js\'))\nresponse.write(\'"></script>\\r\\n\\r\\n<!-- inline scripts related to this page -->\\r\\n<script type="text/javascript">\\r\\n    jQuery(function ($) {\\r\\n        var demo1 = $(\\\'select[name="duallistbox_demo1[]"]\\\').bootstrapDualListbox({infoTextFiltered: \\\'<span class="label label-purple label-lg">Filtered</span>\\\'});\\r\\n        var container1 = demo1.bootstrapDualListbox(\\\'getContainer\\\');\\r\\n        container1.find(\\\'.btn\\\').addClass(\\\'btn-white btn-info btn-bold\\\');\\r\\n\\r\\n        /**var setRatingColors = function() {\\r\\n\\t\\t\\t\\t\\t$(this).find(\\\'.star-on-png,.star-half-png\\\').addClass(\\\'orange2\\\').removeClass(\\\'grey\\\');\\r\\n\\t\\t\\t\\t\\t$(this).find(\\\'.star-off-png\\\').removeClass(\\\'orange2\\\').addClass(\\\'grey\\\');\\r\\n\\t\\t\\t\\t}*/\\r\\n        $(\\\'.rating\\\').raty({\\r\\n            \\\'cancel\\\': true,\\r\\n            \\\'half\\\': true,\\r\\n            \\\'starType\\\': \\\'i\\\'\\r\\n            /**,\\r\\n\\r\\n             \\\'click\\\': function() {\\r\\n\\t\\t\\t\\t\\t\\tsetRatingColors.call(this);\\r\\n\\t\\t\\t\\t\\t},\\r\\n             \\\'mouseover\\\': function() {\\r\\n\\t\\t\\t\\t\\t\\tsetRatingColors.call(this);\\r\\n\\t\\t\\t\\t\\t},\\r\\n             \\\'mouseout\\\': function() {\\r\\n\\t\\t\\t\\t\\t\\tsetRatingColors.call(this);\\r\\n\\t\\t\\t\\t\\t}*/\\r\\n        })//.find(\\\'i:not(.star-raty)\\\').addClass(\\\'grey\\\');\\r\\n\\r\\n\\r\\n        //////////////////\\r\\n        //select2\\r\\n        $(\\\'.select2\\\').css(\\\'width\\\', \\\'200px\\\').select2({allowClear: true})\\r\\n        $(\\\'#select2-multiple-style .btn\\\').on(\\\'click\\\', function (e) {\\r\\n            var target = $(this).find(\\\'input[type=radio]\\\');\\r\\n            var which = parseInt(target.val());\\r\\n            if (which == 2) $(\\\'.select2\\\').addClass(\\\'tag-input-style\\\');\\r\\n            else $(\\\'.select2\\\').removeClass(\\\'tag-input-style\\\');\\r\\n        });\\r\\n\\r\\n        //////////////////\\r\\n        $(\\\'.multiselect\\\').multiselect({\\r\\n            enableFiltering: true,\\r\\n            enableHTML: true,\\r\\n            buttonClass: \\\'btn btn-white btn-primary\\\',\\r\\n            templates: {\\r\\n                button: \\\'<button type="button" class="multiselect dropdown-toggle" data-toggle="dropdown"><span class="multiselect-selected-text"></span> &nbsp;<b class="fa fa-caret-down"></b></button>\\\',\\r\\n                ul: \\\'<ul class="multiselect-container dropdown-menu"></ul>\\\',\\r\\n                filter: \\\'<li class="multiselect-item filter"><div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span><input class="form-control multiselect-search" type="text"></div></li>\\\',\\r\\n                filterClearBtn: \\\'<span class="input-group-btn"><button class="btn btn-default btn-white btn-grey multiselect-clear-filter" type="button"><i class="fa fa-times-circle red2"></i></button></span>\\\',\\r\\n                li: \\\'<li><a tabindex="0"><label></label></a></li>\\\',\\r\\n                divider: \\\'<li class="multiselect-item divider"></li>\\\',\\r\\n                liGroup: \\\'<li class="multiselect-item multiselect-group"><label></label></li>\\\'\\r\\n            }\\r\\n        });\\r\\n\\r\\n\\r\\n        ///////////////////\\r\\n\\r\\n        //typeahead.js\\r\\n        //example taken from plugin\\\'s page at: https://twitter.github.io/typeahead.js/examples/\\r\\n        var substringMatcher = function (strs) {\\r\\n            return function findMatches(q, cb) {\\r\\n                var matches, substringRegex;\\r\\n\\r\\n                // an array that will be populated with substring matches\\r\\n                matches = [];\\r\\n\\r\\n                // regex used to determine if a string contains the substring `q`\\r\\n                substrRegex = new RegExp(q, \\\'i\\\');\\r\\n\\r\\n                // iterate through the pool of strings and for any string that\\r\\n                // contains the substring `q`, add it to the `matches` array\\r\\n                $.each(strs, function (i, str) {\\r\\n                    if (substrRegex.test(str)) {\\r\\n                        // the typeahead jQuery plugin expects suggestions to a\\r\\n                        // JavaScript object, refer to typeahead docs for more info\\r\\n                        matches.push({value: str});\\r\\n                    }\\r\\n                });\\r\\n\\r\\n                cb(matches);\\r\\n            }\\r\\n        }\\r\\n\\r\\n        $(\\\'input.typeahead\\\').typeahead({\\r\\n            hint: true,\\r\\n            highlight: true,\\r\\n            minLength: 1\\r\\n        }, {\\r\\n            name: \\\'states\\\',\\r\\n            displayKey: \\\'value\\\',\\r\\n            source: substringMatcher(ace.vars[\\\'US_STATES\\\']),\\r\\n            limit: 10\\r\\n        });\\r\\n\\r\\n\\r\\n        ///////////////\\r\\n\\r\\n\\r\\n        //in ajax mode, remove remaining elements before leaving page\\r\\n        $(document).one(\\\'ajaxloadstart.page\\\', function (e) {\\r\\n            $(\\\'[class*=select2]\\\').remove();\\r\\n            $(\\\'select[name="duallistbox_demo1[]"]\\\').bootstrapDualListbox(\\\'destroy\\\');\\r\\n            $(\\\'.rating\\\').raty(\\\'destroy\\\');\\r\\n            $(\\\'.multiselect\\\').multiselect(\\\'destroy\\\');\\r\\n        });\\r\\n\\r\\n    });\\r\\n</script>\\r\\n</body>\\r\\n</html>\\r\\n\\r\\n\', escape=False)\nresponse.write(\'\\n\\n\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t<!-- PAGE CONTENT ENDS -->\\n\\t\\t\\t\\t\\t\\t\\t</div><!-- /.col -->\\n\\t\\t\\t\\t\\t\\t</div><!-- /.row -->\\n\\t\\t\\t\\t\\t</div><!-- /.page-content -->\\n\\t\\t\\t\\t</div>\\n\\t\\t\\t</div><!-- /.main-content -->\\n\\n\\n\\n\\t\\t\\t<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">\\n\\t\\t\\t\\t<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>\\n\\t\\t\\t</a>\\n\\t\\t</div><!-- /.main-container -->\\n\\n\\n\', escape=False)\nresponse.write(\'\\n\', escape=False)\nresponse.write(\'\\n<!-- external javascript -->\\n\\n\\n<!--mios scripts-->\\n   \\t<!-- basic scripts -->\\n\\n\\t\\t<!--[if !IE]> -->\\n\\t\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/jquery-2.1.4.min.js\'))\nresponse.write(\'"></script>\\n\\n\\t\\t<!-- <![endif]-->\\n\\n\\t\\t<!--[if IE]>\\n<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/jquery-1.11.3.min.js\'))\nresponse.write(\'"></script>\\n<![endif]-->\\n\\t\\t<script type="text/javascript">\\n\\t\\t\\tif(\\\'ontouchstart\\\' in document.documentElement) document.write("<script src=\\\'\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/jquery.mobile.custom.min.js\'))\nresponse.write(\'\\\'>"+"<"+"/script>");\\n\\t\\t</script>\\n\\t\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/bootstrap.min.js\'))\nresponse.write(\'"></script>\\n\\n\\t\\t<!-- page specific plugin scripts -->\\n\\n\\t\\t<!--[if lte IE 8]>\\n\\t\\t  <script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/excanvas.min.js\'))\nresponse.write(\'"></script>\\n\\t\\t<![endif]-->\\n\\t\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/jquery-ui.custom.min.js\'))\nresponse.write(\'"></script>\\n\\t\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/jquery.ui.touch-punch.min.js\'))\nresponse.write(\'"></script>\\n\\t\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/jquery.easypiechart.min.js\'))\nresponse.write(\'"></script>\\n\\t\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/jquery.easypiechart.min.js\'))\nresponse.write(\'"></script>\\n\\t\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/jquery.flot.min.js\'))\nresponse.write(\'"></script>\\n\\t\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/jquery.flot.pie.min.js\'))\nresponse.write(\'"></script>\\n\\t\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/jquery.flot.resize.min.js\'))\nresponse.write(\'"></script>\\n\\n\\t\\t<!-- ace scripts -->\\n\\t\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/ace-elements.min.js\'))\nresponse.write(\'"></script>\\n\\t\\t<script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/js/ace.min.js\'))\nresponse.write(\'"></script>\\n\\n\\t\\t<!-- inline scripts related to this page -->\\n\\t\\t<script type="text/javascript">\\n\\t\\t\\tjQuery(function($) {\\n\\t\\t\\t\\t$(\\\'.easy-pie-chart.percentage\\\').each(function(){\\n\\t\\t\\t\\t\\tvar $box = $(this).closest(\\\'.infobox\\\');\\n\\t\\t\\t\\t\\tvar barColor = $(this).data(\\\'color\\\') || (!$box.hasClass(\\\'infobox-dark\\\') ? $box.css(\\\'color\\\') : \\\'rgba(255,255,255,0.95)\\\');\\n\\t\\t\\t\\t\\tvar trackColor = barColor == \\\'rgba(255,255,255,0.95)\\\' ? \\\'rgba(255,255,255,0.25)\\\' : \\\'#E2E2E2\\\';\\n\\t\\t\\t\\t\\tvar size = parseInt($(this).data(\\\'size\\\')) || 50;\\n\\t\\t\\t\\t\\t$(this).easyPieChart({\\n\\t\\t\\t\\t\\t\\tbarColor: barColor,\\n\\t\\t\\t\\t\\t\\ttrackColor: trackColor,\\n\\t\\t\\t\\t\\t\\tscaleColor: false,\\n\\t\\t\\t\\t\\t\\tlineCap: \\\'butt\\\',\\n\\t\\t\\t\\t\\t\\tlineWidth: parseInt(size/10),\\n\\t\\t\\t\\t\\t\\tanimate: ace.vars[\\\'old_ie\\\'] ? false : 1000,\\n\\t\\t\\t\\t\\t\\tsize: size\\n\\t\\t\\t\\t\\t});\\n\\t\\t\\t\\t})\\n\\n\\t\\t\\t\\t$(\\\'.sparkline\\\').each(function(){\\n\\t\\t\\t\\t\\tvar $box = $(this).closest(\\\'.infobox\\\');\\n\\t\\t\\t\\t\\tvar barColor = !$box.hasClass(\\\'infobox-dark\\\') ? $box.css(\\\'color\\\') : \\\'#FFF\\\';\\n\\t\\t\\t\\t\\t$(this).sparkline(\\\'html\\\',\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t {\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\ttagValuesAttribute:\\\'data-values\\\',\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\ttype: \\\'bar\\\',\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tbarColor: barColor ,\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tchartRangeMin:$(this).data(\\\'min\\\') || 0\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t });\\n\\t\\t\\t\\t});\\n\\n\\n\\t\\t\\t  //flot chart resize plugin, somehow manipulates default browser resize event to optimize it!\\n\\t\\t\\t  //but sometimes it brings up errors with normal resize event handlers\\n\\t\\t\\t  $.resize.throttleWindow = false;\\n\\n\\t\\t\\t  var placeholder = $(\\\'#piechart-placeholder\\\').css({\\\'width\\\':\\\'90%\\\' , \\\'min-height\\\':\\\'150px\\\'});\\n\\t\\t\\t  var data = [\\n\\t\\t\\t\\t{ label: "social networks",  data: 38.7, color: "#68BC31"},\\n\\t\\t\\t\\t{ label: "search engines",  data: 24.5, color: "#2091CF"},\\n\\t\\t\\t\\t{ label: "ad campaigns",  data: 8.2, color: "#AF4E96"},\\n\\t\\t\\t\\t{ label: "direct traffic",  data: 18.6, color: "#DA5430"},\\n\\t\\t\\t\\t{ label: "other",  data: 10, color: "#FEE074"}\\n\\t\\t\\t  ]\\n\\t\\t\\t  function drawPieChart(placeholder, data, position) {\\n\\t\\t\\t \\t  $.plot(placeholder, data, {\\n\\t\\t\\t\\t\\tseries: {\\n\\t\\t\\t\\t\\t\\tpie: {\\n\\t\\t\\t\\t\\t\\t\\tshow: true,\\n\\t\\t\\t\\t\\t\\t\\ttilt:0.8,\\n\\t\\t\\t\\t\\t\\t\\thighlight: {\\n\\t\\t\\t\\t\\t\\t\\t\\topacity: 0.25\\n\\t\\t\\t\\t\\t\\t\\t},\\n\\t\\t\\t\\t\\t\\t\\tstroke: {\\n\\t\\t\\t\\t\\t\\t\\t\\tcolor: \\\'#fff\\\',\\n\\t\\t\\t\\t\\t\\t\\t\\twidth: 2\\n\\t\\t\\t\\t\\t\\t\\t},\\n\\t\\t\\t\\t\\t\\t\\tstartAngle: 2\\n\\t\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\t},\\n\\t\\t\\t\\t\\tlegend: {\\n\\t\\t\\t\\t\\t\\tshow: true,\\n\\t\\t\\t\\t\\t\\tposition: position || "ne",\\n\\t\\t\\t\\t\\t\\tlabelBoxBorderColor: null,\\n\\t\\t\\t\\t\\t\\tmargin:[-30,15]\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\t,\\n\\t\\t\\t\\t\\tgrid: {\\n\\t\\t\\t\\t\\t\\thoverable: true,\\n\\t\\t\\t\\t\\t\\tclickable: true\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t })\\n\\t\\t\\t }\\n\\t\\t\\t drawPieChart(placeholder, data);\\n\\n\\t\\t\\t /**\\n\\t\\t\\t we saved the drawing function and the data to redraw with different position later when switching to RTL mode dynamically\\n\\t\\t\\t so that\\\'s not needed actually.\\n\\t\\t\\t */\\n\\t\\t\\t placeholder.data(\\\'chart\\\', data);\\n\\t\\t\\t placeholder.data(\\\'draw\\\', drawPieChart);\\n\\n\\n\\t\\t\\t  //pie chart tooltip example\\n\\t\\t\\t  var $tooltip = $("<div class=\\\'tooltip top in\\\'><div class=\\\'tooltip-inner\\\'></div></div>").hide().appendTo(\\\'body\\\');\\n\\t\\t\\t  var previousPoint = null;\\n\\n\\t\\t\\t  placeholder.on(\\\'plothover\\\', function (event, pos, item) {\\n\\t\\t\\t\\tif(item) {\\n\\t\\t\\t\\t\\tif (previousPoint != item.seriesIndex) {\\n\\t\\t\\t\\t\\t\\tpreviousPoint = item.seriesIndex;\\n\\t\\t\\t\\t\\t\\tvar tip = item.series[\\\'label\\\'] + " : " + item.series[\\\'percent\\\']+\\\'%\\\';\\n\\t\\t\\t\\t\\t\\t$tooltip.show().children(0).text(tip);\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\t$tooltip.css({top:pos.pageY + 10, left:pos.pageX + 10});\\n\\t\\t\\t\\t} else {\\n\\t\\t\\t\\t\\t$tooltip.hide();\\n\\t\\t\\t\\t\\tpreviousPoint = null;\\n\\t\\t\\t\\t}\\n\\n\\t\\t\\t });\\n\\n\\t\\t\\t\\t/////////////////////////////////////\\n\\t\\t\\t\\t$(document).one(\\\'ajaxloadstart.page\\\', function(e) {\\n\\t\\t\\t\\t\\t$tooltip.remove();\\n\\t\\t\\t\\t});\\n\\n\\n\\n\\n\\t\\t\\t\\tvar d1 = [];\\n\\t\\t\\t\\tfor (var i = 0; i < Math.PI * 2; i += 0.5) {\\n\\t\\t\\t\\t\\td1.push([i, Math.sin(i)]);\\n\\t\\t\\t\\t}\\n\\n\\t\\t\\t\\tvar d2 = [];\\n\\t\\t\\t\\tfor (var i = 0; i < Math.PI * 2; i += 0.5) {\\n\\t\\t\\t\\t\\td2.push([i, Math.cos(i)]);\\n\\t\\t\\t\\t}\\n\\n\\t\\t\\t\\tvar d3 = [];\\n\\t\\t\\t\\tfor (var i = 0; i < Math.PI * 2; i += 0.2) {\\n\\t\\t\\t\\t\\td3.push([i, Math.tan(i)]);\\n\\t\\t\\t\\t}\\n\\n\\n\\t\\t\\t\\tvar sales_charts = $(\\\'#sales-charts\\\').css({\\\'width\\\':\\\'100%\\\' , \\\'height\\\':\\\'220px\\\'});\\n\\t\\t\\t\\t$.plot("#sales-charts", [\\n\\t\\t\\t\\t\\t{ label: "Domains", data: d1 },\\n\\t\\t\\t\\t\\t{ label: "Hosting", data: d2 },\\n\\t\\t\\t\\t\\t{ label: "Services", data: d3 }\\n\\t\\t\\t\\t], {\\n\\t\\t\\t\\t\\thoverable: true,\\n\\t\\t\\t\\t\\tshadowSize: 0,\\n\\t\\t\\t\\t\\tseries: {\\n\\t\\t\\t\\t\\t\\tlines: { show: true },\\n\\t\\t\\t\\t\\t\\tpoints: { show: true }\\n\\t\\t\\t\\t\\t},\\n\\t\\t\\t\\t\\txaxis: {\\n\\t\\t\\t\\t\\t\\ttickLength: 0\\n\\t\\t\\t\\t\\t},\\n\\t\\t\\t\\t\\tyaxis: {\\n\\t\\t\\t\\t\\t\\tticks: 10,\\n\\t\\t\\t\\t\\t\\tmin: -2,\\n\\t\\t\\t\\t\\t\\tmax: 2,\\n\\t\\t\\t\\t\\t\\ttickDecimals: 3\\n\\t\\t\\t\\t\\t},\\n\\t\\t\\t\\t\\tgrid: {\\n\\t\\t\\t\\t\\t\\tbackgroundColor: { colors: [ "#fff", "#fff" ] },\\n\\t\\t\\t\\t\\t\\tborderWidth: 1,\\n\\t\\t\\t\\t\\t\\tborderColor:\\\'#555\\\'\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t});\\n\\n\\n\\t\\t\\t\\t$(\\\'#recent-box [data-rel="tooltip"]\\\').tooltip({placement: tooltip_placement});\\n\\t\\t\\t\\tfunction tooltip_placement(context, source) {\\n\\t\\t\\t\\t\\tvar $source = $(source);\\n\\t\\t\\t\\t\\tvar $parent = $source.closest(\\\'.tab-content\\\')\\n\\t\\t\\t\\t\\tvar off1 = $parent.offset();\\n\\t\\t\\t\\t\\tvar w1 = $parent.width();\\n\\n\\t\\t\\t\\t\\tvar off2 = $source.offset();\\n\\t\\t\\t\\t\\t//var w2 = $source.width();\\n\\n\\t\\t\\t\\t\\tif( parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2) ) return \\\'right\\\';\\n\\t\\t\\t\\t\\treturn \\\'left\\\';\\n\\t\\t\\t\\t}\\n\\n\\n\\t\\t\\t\\t$(\\\'.dialogs,.comments\\\').ace_scroll({\\n\\t\\t\\t\\t\\tsize: 300\\n\\t\\t\\t    });\\n\\n\\n\\t\\t\\t\\t//Android\\\'s default browser somehow is confused when tapping on label which will lead to dragging the task\\n\\t\\t\\t\\t//so disable dragging when clicking on label\\n\\t\\t\\t\\tvar agent = navigator.userAgent.toLowerCase();\\n\\t\\t\\t\\tif(ace.vars[\\\'touch\\\'] && ace.vars[\\\'android\\\']) {\\n\\t\\t\\t\\t  $(\\\'#tasks\\\').on(\\\'touchstart\\\', function(e){\\n\\t\\t\\t\\t\\tvar li = $(e.target).closest(\\\'#tasks li\\\');\\n\\t\\t\\t\\t\\tif(li.length == 0)return;\\n\\t\\t\\t\\t\\tvar label = li.find(\\\'label.inline\\\').get(0);\\n\\t\\t\\t\\t\\tif(label == e.target || $.contains(label, e.target)) e.stopImmediatePropagation() ;\\n\\t\\t\\t\\t  });\\n\\t\\t\\t\\t}\\n\\n\\t\\t\\t\\t$(\\\'#tasks\\\').sortable({\\n\\t\\t\\t\\t\\topacity:0.8,\\n\\t\\t\\t\\t\\trevert:true,\\n\\t\\t\\t\\t\\tforceHelperSize:true,\\n\\t\\t\\t\\t\\tplaceholder: \\\'draggable-placeholder\\\',\\n\\t\\t\\t\\t\\tforcePlaceholderSize:true,\\n\\t\\t\\t\\t\\ttolerance:\\\'pointer\\\',\\n\\t\\t\\t\\t\\tstop: function( event, ui ) {\\n\\t\\t\\t\\t\\t\\t//just for Chrome!!!! so that dropdowns on items don\\\'t appear below other items after being moved\\n\\t\\t\\t\\t\\t\\t$(ui.item).css(\\\'z-index\\\', \\\'auto\\\');\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t);\\n\\t\\t\\t\\t$(\\\'#tasks\\\').disableSelection();\\n\\t\\t\\t\\t$(\\\'#tasks input:checkbox\\\').removeAttr(\\\'checked\\\').on(\\\'click\\\', function(){\\n\\t\\t\\t\\t\\tif(this.checked) $(this).closest(\\\'li\\\').addClass(\\\'selected\\\');\\n\\t\\t\\t\\t\\telse $(this).closest(\\\'li\\\').removeClass(\\\'selected\\\');\\n\\t\\t\\t\\t});\\n\\n\\n\\t\\t\\t\\t//show the dropdowns on top or bottom depending on window height and menu position\\n\\t\\t\\t\\t$(\\\'#task-tab .dropdown-hover\\\').on(\\\'mouseenter\\\', function(e) {\\n\\t\\t\\t\\t\\tvar offset = $(this).offset();\\n\\n\\t\\t\\t\\t\\tvar $w = $(window)\\n\\t\\t\\t\\t\\tif (offset.top > $w.scrollTop() + $w.innerHeight() - 100)\\n\\t\\t\\t\\t\\t\\t$(this).addClass(\\\'dropup\\\');\\n\\t\\t\\t\\t\\telse $(this).removeClass(\\\'dropup\\\');\\n\\t\\t\\t\\t});\\n\\n\\t\\t\\t})\\n\\t\\t</script>\\n\\n    <!-- Bootstrap core JavaScript-->\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'assets/jsPdf/jspdf.min.js\'))\nresponse.write(\'"></script>\\n\\n   <!--end mios scripts-->\\n<!-- library for cookie management -->\\n <!-- The javascript =============================== -->\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/bootstrap.bundle.min.js\'))\nresponse.write(\'"></script>\\n    <script src="\', escape=False)\nresponse.write(URL(\'static\',\'js/web2py-bootstrap4.js\'))\nresponse.write(\'"></script>\\n    \', escape=False)\nresponse.write(\'\\n    \', escape=False)\nif response.google_analytics_id:\n    response.write(\'\\n    <!-- Analytics ==================================== -->\\n    <script src="\', escape=False)\n    response.write(URL(\'static\',\'js/analytics.min.js\'))\n    response.write(\'"></script>\\n    <script type="text/javascript">\\n      analytics.initialize({\\n      \\\'Google Analytics\\\':{trackingId:\\\'\', escape=False)\n    response.write(response.google_analytics_id)\n    response.write("\'}\\n      });\\n    </script>\\n\\n\\n\\n    ", escape=False)\n    pass\nresponse.write(\'\\n\\n</body>\\n</html>\\n\', escape=False)'
+p7
+sS'snapshot'
+p8
+(dp9
+S'exception'
+p10
+(dp11
+S'__getslice__'
+p12
+S"<method-wrapper '__getslice__' of exceptions.IndexError object>"
+p13
+sS'__str__'
+p14
+S"<method-wrapper '__str__' of exceptions.IndexError object>"
+p15
+sS'__reduce__'
+p16
+S'<built-in method __reduce__ of exceptions.IndexError object>'
+p17
+sS'__dict__'
+p18
+S'{}'
+p19
+sS'message'
+p20
+S"'list index out of range'"
+p21
+sS'__sizeof__'
+p22
+S'<built-in method __sizeof__ of exceptions.IndexError object>'
+p23
+sS'__init__'
+p24
+S"<method-wrapper '__init__' of exceptions.IndexError object>"
+p25
+sS'__setattr__'
+p26
+S"<method-wrapper '__setattr__' of exceptions.IndexError object>"
+p27
+sS'__reduce_ex__'
+p28
+S'<built-in method __reduce_ex__ of exceptions.IndexError object>'
+p29
+sS'__new__'
+p30
+S'<built-in method __new__ of type object>'
+p31
+sS'__format__'
+p32
+S'<built-in method __format__ of exceptions.IndexError object>'
+p33
+sS'__class__'
+p34
+S"<type 'exceptions.IndexError'>"
+p35
+sS'__doc__'
+p36
+S"'Sequence index out of range.'"
+p37
+sS'__getitem__'
+p38
+S"<method-wrapper '__getitem__' of exceptions.IndexError object>"
+p39
+sS'__setstate__'
+p40
+S'<built-in method __setstate__ of exceptions.IndexError object>'
+p41
+sS'__getattribute__'
+p42
+S"<method-wrapper '__getattribute__' of exceptions.IndexError object>"
+p43
+sS'args'
+p44
+S"('list index out of range',)"
+p45
+sS'__subclasshook__'
+p46
+S'<built-in method __subclasshook__ of type object>'
+p47
+sS'__unicode__'
+p48
+S'<built-in method __unicode__ of exceptions.IndexError object>'
+p49
+sS'__delattr__'
+p50
+S"<method-wrapper '__delattr__' of exceptions.IndexError object>"
+p51
+sS'__repr__'
+p52
+S"<method-wrapper '__repr__' of exceptions.IndexError object>"
+p53
+sS'__hash__'
+p54
+S"<method-wrapper '__hash__' of exceptions.IndexError object>"
+p55
+ssS'evalue'
+p56
+S'list index out of range'
+p57
+sS'request'
+p58
+cgluon.html
+XML_unpickle
+p59
+(S's\xaec\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">ajax</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">application</td><td style="vertical-align:top;">:</td><td><div>Solapin</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cid</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">controller</td><td style="vertical-align:top;">:</td><td><div>default</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_admin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-0d7bff05-f97f-4e3b-aae4-ca03875f621e<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_siproca</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-0c15aaef-df6e-4c22-a28e-e6bfa70b3e34<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_solapin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-0ef77f9c-2088-4749-ab82-72b2b5e9d74d<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_welcome</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-35ea0fb8-604c-49f2-a08a-c62974a330d8<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">env</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_ENCODING</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_ACCEPT_LANGUAGE</td><td style="vertical-align:top;">:</td><td><div>es-ES,pt;q=0.8,es;q=0.6,en-US;q=0.4,en;q=0.2</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_CONNECTION</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_COOKIE</td><td style="vertical-align:top;">:</td><td><div>session_id_welcome=127.0.0.1-35ea0fb8-604c-49f2-a08a-c62974a330d8; session_id_solapin=127.0.0.1-0ef77f9c-2088-4749-ab82-72b2b5e9d74d; session_id_admin=127.0.0.1-0d7bff05-f97f-4e3b-aae4-ca03875f621e; session_id_siproca=127.0.0.1-0c15aaef-df6e-4c22-a28e-e6bfa70b3e34</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_HOST</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_UPGRADE_INSECURE_REQUESTS</td><td style="vertical-align:top;">:</td><td><div>1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">HTTP_USER_AGENT</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">PATH_INFO</td><td style="vertical-align:top;">:</td><td><div>/Solapin/default/generarvarios</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">QUERY_STRING</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_ADDR</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REMOTE_PORT</td><td style="vertical-align:top;">:</td><td><div>50940</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">REQUEST_METHOD</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SCRIPT_NAME</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_NAME</td><td style="vertical-align:top;">:</td><td><div>DESKTOP-VJUJBO8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PORT</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_PROTOCOL</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">SERVER_SOFTWARE</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;C:\\\\Users\\\\Rosario\\\\PycharmProjects\\\\Solapin\\\\web2py\\\\applications\\\\welcome\\\\&#x27;, &#x27;C:\\\\Users\\\\Rosario\\\\PycharmProjects\\\\Solapin\\\\web2py\\\\applications\\\\web2pybook\\\\&#x27;, &#x27;C:\\\\Users\\\\Rosario\\\\PycharmProjects\\\\Solapin\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;C:\\\\Users\\\\Rosario\\\\PycharmProjects\\\\Solapin\\\\web2py\\\\applications\\\\Solapin\\\\&#x27;, &#x27;C:\\\\Users\\\\Rosario\\\\PycharmProjects\\\\Solapin\\\\web2py\\\\applications\\\\siproca\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\Rosario\\PycharmProjects\\Solapin\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x3cfcdc8: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;DESKTOP-VJUJBO8&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;port&#x27;: 8000, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;C:\\\\Users\\\\Rosario\\\\PycharmProjects\\\\Solapin\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;******&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\Rosario\\PycharmProjects\\Solapin\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept</td><td style="vertical-align:top;">:</td><td><div>text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_encoding</td><td style="vertical-align:top;">:</td><td><div>gzip, deflate</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_accept_language</td><td style="vertical-align:top;">:</td><td><div>es-ES,pt;q=0.8,es;q=0.6,en-US;q=0.4,en;q=0.2</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_connection</td><td style="vertical-align:top;">:</td><td><div>keep-alive</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_cookie</td><td style="vertical-align:top;">:</td><td><div>session_id_welcome=127.0.0.1-35ea0fb8-604c-49f2-a08a-c62974a330d8; session_id_solapin=127.0.0.1-0ef77f9c-2088-4749-ab82-72b2b5e9d74d; session_id_admin=127.0.0.1-0d7bff05-f97f-4e3b-aae4-ca03875f621e; session_id_siproca=127.0.0.1-0c15aaef-df6e-4c22-a28e-e6bfa70b3e34</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_host</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1:8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_upgrade_insecure_requests</td><td style="vertical-align:top;">:</td><td><div>1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">http_user_agent</td><td style="vertical-align:top;">:</td><td><div>Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_py2</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>::1</div></td></tr><tr><td><div>DESKTOP-VJUJBO8</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path_info</td><td style="vertical-align:top;">:</td><td><div>/Solapin/default/generarvarios</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">query_string</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_addr</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remote_port</td><td style="vertical-align:top;">:</td><td><div>50940</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">request_uri</td><td style="vertical-align:top;">:</td><td><div>/Solapin/default/generarvarios</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">script_name</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_name</td><td style="vertical-align:top;">:</td><td><div>DESKTOP-VJUJBO8</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_port</td><td style="vertical-align:top;">:</td><td><div>8000</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_protocol</td><td style="vertical-align:top;">:</td><td><div>HTTP/1.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">server_software</td><td style="vertical-align:top;">:</td><td><div>Rocket 1.2.6</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_path</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\Rosario\\PycharmProjects\\Solapin\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.17.1-stable+timestamp.2018.08.06.01.02.56</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x000000000265B150&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x0000000003C91B88&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x000000000A5924F8&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi.version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_errors</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;&lt;stderr&gt;&#x27;, mode &#x27;w&#x27; at 0x000000000265B150&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_file_wrapper</td><td style="vertical-align:top;">:</td><td><div>&lt;class wsgiref.util.FileWrapper at 0x0000000003C91B88&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_input</td><td style="vertical-align:top;">:</td><td><div>&lt;socket._fileobject object at 0x000000000A5924F8&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multiprocess</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_multithread</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_run_once</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_url_scheme</td><td style="vertical-align:top;">:</td><td><div>http</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi_version</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>1</div></td></tr><tr><td><div>0</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">extension</td><td style="vertical-align:top;">:</td><td><div>html</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">folder</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\Rosario\\PycharmProjects\\Solapin\\web2py\\applications\\Solapin\\</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">function</td><td style="vertical-align:top;">:</td><td><div>generarvarios</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">global_settings</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">app_folders</td><td style="vertical-align:top;">:</td><td><div>set([&#x27;C:\\\\Users\\\\Rosario\\\\PycharmProjects\\\\Solapin\\\\web2py\\\\applications\\\\welcome\\\\&#x27;, &#x27;C:\\\\Users\\\\Rosario\\\\PycharmProjects\\\\Solapin\\\\web2py\\\\applications\\\\web2pybook\\\\&#x27;, &#x27;C:\\\\Users\\\\Rosario\\\\PycharmProjects\\\\Solapin\\\\web2py\\\\applications\\\\admin\\\\&#x27;, &#x27;C:\\\\Users\\\\Rosario\\\\PycharmProjects\\\\Solapin\\\\web2py\\\\applications\\\\Solapin\\\\&#x27;, &#x27;C:\\\\Users\\\\Rosario\\\\PycharmProjects\\\\Solapin\\\\web2py\\\\applications\\\\siproca\\\\&#x27;])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">applications_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\Rosario\\PycharmProjects\\Solapin\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_args</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cmd_options</td><td style="vertical-align:top;">:</td><td><div>&lt;Values at 0x3cfcdc8: {&#x27;verbose&#x27;: False, &#x27;ip&#x27;: &#x27;127.0.0.1&#x27;, &#x27;debuglevel&#x27;: 30, &#x27;with_scheduler&#x27;: False, &#x27;shutdown_timeout&#x27;: 5, &#x27;taskbar&#x27;: False, &#x27;with_coverage&#x27;: False, &#x27;pid_filename&#x27;: &#x27;httpserver.pid&#x27;, &#x27;maxthreads&#x27;: None, &#x27;softcron&#x27;: False, &#x27;server_name&#x27;: &#x27;DESKTOP-VJUJBO8&#x27;, &#x27;bpython&#x27;: False, &#x27;nogui&#x27;: False, &#x27;port&#x27;: 8000, &#x27;print_errors&#x27;: False, &#x27;extcron&#x27;: False, &#x27;runcron&#x27;: False, &#x27;run_system_tests&#x27;: False, &#x27;test&#x27;: None, &#x27;folder&#x27;: &#x27;C:\\\\Users\\\\Rosario\\\\PycharmProjects\\\\Solapin\\\\web2py&#x27;, &#x27;config&#x27;: &#x27;&#x27;, &#x27;minthreads&#x27;: None, &#x27;shell&#x27;: None, &#x27;run&#x27;: &#x27;&#x27;, &#x27;log_filename&#x27;: &#x27;httpserver.log&#x27;, &#x27;profiler_dir&#x27;: None, &#x27;args&#x27;: [&#x27;&#x27;], &#x27;socket_timeout&#x27;: 5, &#x27;ssl_ca_certificate&#x27;: None, &#x27;scheduler&#x27;: None, &#x27;interfaces&#x27;: None, &#x27;ssl_private_key&#x27;: &#x27;&#x27;, &#x27;gae&#x27;: None, &#x27;password&#x27;: &#x27;******&#x27;, &#x27;request_queue_size&#x27;: 5, &#x27;ssl_certificate&#x27;: &#x27;&#x27;, &#x27;cronjob&#x27;: False, &#x27;numthreads&#x27;: None, &#x27;quiet&#x27;: False, &#x27;import_models&#x27;: False, &#x27;timeout&#x27;: 10, &#x27;plain&#x27;: False, &#x27;nobanner&#x27;: False}&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">db_sessions</td><td style="vertical-align:top;">:</td><td><div>set([])</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">debugging</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">gluon_parent</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\Rosario\\PycharmProjects\\Solapin\\web2py</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_jython</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_py2</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_pypy</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_source</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">local_hosts</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>::1</div></td></tr><tr><td><div>DESKTOP-VJUJBO8</div></td></tr><tr><td><div>::ffff:127.0.0.1</div></td></tr><tr><td><div>127.0.0.1</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">web2py_version</td><td style="vertical-align:top;">:</td><td><div>2.17.1-stable+timestamp.2018.08.06.01.02.56</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_https</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_local</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_restful</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_scheduler</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_shell</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">method</td><td style="vertical-align:top;">:</td><td><div>GET</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">now</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2019, 3, 13, 0, 28, 14, 935000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_args</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">raw_extension</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">url</td><td style="vertical-align:top;">:</td><td><div>/Solapin/default/generarvarios</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">utcnow</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2019, 3, 12, 23, 28, 14, 935000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">wsgi</td><td style="vertical-align:top;">:</td><td><div>&lt;gluon.main.LazyWSGI object at 0x000000000CA0DEB8&gt;</div></td></tr></table></div>'
+tRp60
+sS'frames'
+p61
+(lp62
+(dp63
+S'file'
+p64
+S'C:\\Users\\Rosario\\PycharmProjects\\Solapin\\web2py\\gluon\\restricted.py'
+p65
+sS'dump'
+p66
+(dp67
+S'environment'
+p68
+S"{'A': <class 'gluon.html.A'>, 'ANY_OF': <class 'gluon.validators.ANY_OF'>, 'ASSIGNJS': <function ASSIGNJS>, 'AppConfig': <function AppConfig>, 'Auth': <class 'gluon.tools.Auth'>, 'B': <class 'gluon.html.B'>, 'BEAUTIFY': <class 'gluon.html.BEAUTIFY'>, 'BODY': <class 'gluon.html.BODY'>, 'BR': <class 'gluon.html.BR'>, 'BUTTON': <class 'gluon.html.BUTTON'>, ...}"
+p69
+sS'ccode'
+p70
+S'<code object <module> at 000000000DE246B0, file ...olapin\\views\\default/generarvarios.html", line 1>'
+p71
+ssS'lnum'
+p72
+I219
+sS'lines'
+p73
+(dp74
+I214
+S'    if environment is None:'
+p75
+sI215
+S'        environment = {}'
+p76
+sI216
+S"    environment['__file__'] = layer"
+p77
+sI217
+S"    environment['__name__'] = '__restricted__'"
+p78
+sI218
+S'    try:'
+p79
+sI219
+S'        exec(ccode, environment)'
+p80
+sI220
+S'    except HTTP:'
+p81
+sI221
+S'        raise'
+p82
+sI222
+S'    except RestrictedError:'
+p83
+sI223
+S'        # do not encapsulate (obfuscate) the original RestrictedError'
+p84
+ssS'call'
+p85
+S'(ccode=<code object <module> at 000000000DE246B0, file ...olapin\\views\\default/generarvarios.html", line 1>, environment={\'A\': <class \'gluon.html.A\'>, \'ANY_OF\': <class \'gluon.validators.ANY_OF\'>, \'ASSIGNJS\': <function ASSIGNJS>, \'AppConfig\': <function AppConfig>, \'Auth\': <class \'gluon.tools.Auth\'>, \'B\': <class \'gluon.html.B\'>, \'BEAUTIFY\': <class \'gluon.html.BEAUTIFY\'>, \'BODY\': <class \'gluon.html.BODY\'>, \'BR\': <class \'gluon.html.BR\'>, \'BUTTON\': <class \'gluon.html.BUTTON\'>, ...}, layer=r\'C:\\Users\\Rosario\\PycharmProjects\\Solapin\\web2py\\...ications\\Solapin\\views\\default/generarvarios.html\', scode=\'response.write(\\\'\\\\n<!DOCTYPE html>\\\\n<html lang="e...nse.write(\\\'\\\\n\\\\n</body>\\\\n</html>\\\\n\\\', escape=False)\')'
+p86
+sS'func'
+p87
+S'restricted'
+p88
+sa(dp89
+g64
+S'C:\\Users\\Rosario\\PycharmProjects\\Solapin\\web2py\\applications\\Solapin\\views\\default\\generarvarios.html'
+p90
+sg66
+(dp91
+sg72
+I128
+sg73
+(dp92
+I128
+S'response.write(nombre[0])'
+p93
+sI129
+S'response.write(\'\\r\\n<br>\\r\\n<form method="post" class="form-horizontal" role="form">\\r\\n    <label class="control-label no-padding-right"> Seleccionar Personas </label>\\r\\n\\r\\n        <select multiple="multiple" id="state" name="ci" class="select2" data-placeholder="Digite el nombre...">\\r\\n        \', escape=False)'
+p94
+sI130
+S'for persona in personas:'
+p95
+sI131
+S'    response.write(\'\\r\\n            <option value="\', escape=False)'
+p96
+sI132
+S'    response.write(persona.ci)'
+p97
+sI133
+S'    response.write(\'">\', escape=False)'
+p98
+sI134
+S'    response.write(persona.nombre +" "+ persona.apellidos)'
+p99
+sI135
+S"    response.write('</option>\\r\\n        ', escape=False)"
+p100
+sI136
+S'    pass'
+p101
+sI137
+S'response.write(\'\\r\\n        </select>\\r\\n\\r\\n    <input class="btn btn-primary radius-4 " type="submit" value="Generar Solapin">\\r\\n</form>\\r\\n\\r\\n<a href="javascript:genPDF2()"  class="btn btn-primary radius-4">\\r\\n    Generar PDF\\r\\n    <i class="ace-icon fa fa-cog bigger-130"></i></a>\\r\\n\\r\\n<hr>\\r\\n<div id="jqSegmentedDisplay">\\r\\n\\r\\n\', escape=False)'
+p102
+sI138
+S'for i in range(0,cantSolapin):'
+p103
+sI119
+S'response.write(\'"/>\\r\\n    <link rel="stylesheet" href="\', escape=False)'
+p104
+sI120
+S"response.write(URL('static','assets/css/select2.min.css'))"
+p105
+sI121
+S'response.write(\'"/>\\r\\n\\r\\n    <script src="\', escape=False)'
+p106
+sI122
+S"response.write(URL('static','assets/jspdf/html2pdf.min.js'))"
+p107
+sI123
+S'response.write(\'"></script>\\r\\n    <script src="\', escape=False)'
+p108
+sI124
+S"response.write(URL('static','assets/jspdf/html2canvas.js'))"
+p109
+sI125
+S'response.write(\'"></script>\\r\\n    <script src="\', escape=False)'
+p110
+sI126
+S"response.write(URL('static','assets/jspdf/jspdf.min.js'))"
+p111
+sI127
+S'response.write(\'"></script>\\r\\n    <script type="text/javascript">\\r\\n        $(".my_select_box").chosen({\\r\\n            placeholder_text_multiple: 10,\\r\\n            no_results_text: "Oops, nothing found!",\\r\\n            width: "95%"\\r\\n        });\\r\\n        function genPDF2() {\\r\\n            var element = document.getElementById(\\\'jqSegmentedDisplay\\\');\\r\\n            var opt = {\\r\\n                margin: [0, 0, 0.1, 0],\\r\\n                padding: [0, 0.5, 0, 0],\\r\\n                filename: \\\'solapin.pdf\\\',\\r\\n                image: {type: \\\'jpeg\\\', quality: 1},\\r\\n                html2canvas: {scale: 3},\\r\\n                jsPDF: {unit: \\\'in\\\', format: \\\'letter\\\', orientation: \\\'portrait\\\'}\\r\\n            };\\r\\n// New Promise-based usage:\\r\\n            html2pdf().from(element).set(opt).save();\\r\\n// Old monolithic-style usage:\\r\\n            // html2pdf(element, opt);\\r\\n        }\\r\\n    </script>\\r\\n    <title>T\\xc3\\xadtulo de la p\\xc3\\xa1gina</title>\\r\\n\\r\\n</head>\\r\\n<body>\\r\\n<label style="font-size: large">Por favor digitar el numero de identificacion a generar</label>\\r\\n\', escape=False)'
+p112
+ssg85
+S'()'
+p113
+sg87
+S'<module>'
+p114
+sasS'pyver'
+p115
+S'Python 2.7.8: C:\\Python27\\python.exe (prefix: C:\\Python27)'
+p116
+sS'session'
+p117
+g59
+(S's\x88\r\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">auth</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">expiration</td><td style="vertical-align:top;">:</td><td><div>3600</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">hmac_key</td><td style="vertical-align:top;">:</td><td><div>b5554db1-b9fa-4c9d-90d4-9642508337b9</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_visit</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2019, 3, 13, 0, 28, 14, 935000)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">remember_me</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">user</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">created_by</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">created_on</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2019, 2, 14, 7, 45, 6)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">email</td><td style="vertical-align:top;">:</td><td><div>gugurai@hotmail.com</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">first_name</td><td style="vertical-align:top;">:</td><td><div>Agostinho</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">id</td><td style="vertical-align:top;">:</td><td><div>1L</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">is_active</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_name</td><td style="vertical-align:top;">:</td><td><div>rosario</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">modified_by</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">modified_on</td><td style="vertical-align:top;">:</td><td><div>datetime.datetime(2019, 2, 14, 7, 45, 6)</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">registration_id</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">registration_key</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">reset_password_key</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">username</td><td style="vertical-align:top;">:</td><td><div>rosario</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">user_groups</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">1</td><td style="vertical-align:top;">:</td><td><div>Administrador</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_orderby</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">last_query</td><td style="vertical-align:top;">:</td><td><div>db.Persona.id&gt;0</div></td></tr></table></div>'
+tRp118
+sS'etype'
+p119
+S"<type 'exceptions.IndexError'>"
+p120
+sS'date'
+p121
+S'Wed Mar 13 00:28:16 2019'
+p122
+sS'response'
+p123
+g59
+(S's\xc1>\x00\x00<div><table><tr><td style="font-weight:bold;vertical-align:top;">body</td><td style="vertical-align:top;">:</td><td><div>&lt;cStringIO.StringO object at 0x000000000BC287D8&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">cookies</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">session_id_solapin</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-0ef77f9c-2088-4749-ab82-72b2b5e9d74d<table><tr><td style="font-weight:bold;vertical-align:top;">comment</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">domain</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">expires</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">httponly</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">max-age</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">path</td><td style="vertical-align:top;">:</td><td><div>/</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">secure</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">version</td><td style="vertical-align:top;">:</td><td><div></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">delimiters</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>{{</div></td></tr><tr><td><div>}}</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">files</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>/Solapin/static/js/jquery.js</div></td></tr><tr><td><div>/Solapin/static/css/calendar.css</div></td></tr><tr><td><div>/Solapin/static/js/calendar.js</div></td></tr><tr><td><div>/Solapin/static/js/web2py.js</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">flash</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">form_label_separator</td><td style="vertical-align:top;">:</td><td><div></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">formstyle</td><td style="vertical-align:top;">:</td><td><div>bootstrap4_inline</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generic_patterns</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>*</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">google_analytics_id</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">headers</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">X-Powered-By</td><td style="vertical-align:top;">:</td><td><div>web2py</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">menu</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div><table><tr><td><div>Inicio</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/Solapin/default/index</div></td></tr><tr><td><div><table></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Mis Sitios</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/site</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Esta Aplicaci\xc3\xb3n</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Dise\xc3\xb1o</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/design/Solapin</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Controlador</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Solapin/controllers/default.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Vista</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Solapin/views/default/generarvarios.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Modelo BDD</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Solapin/models/0_db.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Modelo "menu"</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Solapin/models/menu.py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Config.ini</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Solapin/private/appconfig.ini</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Dise\xc3\xb1o de p\xc3\xa1gina</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Solapin/views/layout.html</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Hoja de estilo</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/edit/Solapin/static/css/web2py-bootstrap3.css</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Base de datos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/Solapin/appadmin/index</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Errores</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/errors/Solapin</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Acerca de</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>/admin/default/about/Solapin</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>web2py.com</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Descargas</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/download</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Soporte</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/support</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Demostraci\xc3\xb3n</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/demo_admin</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Ejemplos R\xc3\xa1pidos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/examples/default/examples</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Preguntas frecuentes</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/AlterEgo</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>V\xc3\xaddeos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/videos/</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Aplicaciones Libres</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/appliances</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2py.com/plugins</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Recetas</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://web2pyslices.com/</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Documentaci\xc3\xb3n</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>#</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Libro Online</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Prefacio</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/00</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Introducci\xc3\xb3n</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/01</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Python</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/02</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Resumen</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/03</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>El N\xc3\xbacleo</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/04</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Las Vistas</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/05</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Base de datos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/06</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Formularios y validadores</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/07</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Correo electr\xc3\xb3nico y SMS</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/08</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Control de Acceso</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/09</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Servicios</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/10</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Recetas AJAX</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/11</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Componentes y Plugins</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/12</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Recetas de despliegue</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/13</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Otras Recetas</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/14</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Ayudando a web2py</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/book/default/chapter/15</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Compra el libro de web2py</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://stores.lulu.com/web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Comunidad</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>None</div></td></tr><tr><td><div><table><tr><td><div><table><tr><td><div>Grupos</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://www.web2py.com/examples/default/usergroups</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Twitter</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://twitter.com/web2py</div></td></tr></table></div></td></tr><tr><td><div><table><tr><td><div>Chat en vivo</div></td></tr><tr><td><div>False</div></td></tr><tr><td><div>http://webchat.freenode.net/?channels=web2py</div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">meta</td><td style="vertical-align:top;">:</td><td><div><table><tr><td style="font-weight:bold;vertical-align:top;">author</td><td style="vertical-align:top;">:</td><td><div>Your Name &lt;you@example.com&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">description</td><td style="vertical-align:top;">:</td><td><div>a cool new app</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">generator</td><td style="vertical-align:top;">:</td><td><div>Web2py Web Framework</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">keywords</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>web2py</div></td></tr><tr><td><div>python</div></td></tr><tr><td><div>framework</div></td></tr></table></div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">models_to_run</td><td style="vertical-align:top;">:</td><td><div><table><tr><td><div>^\\w+\\.py$</div></td></tr><tr><td><div>^default/\\w+\\.py$</div></td></tr><tr><td><div>^default/generarvarios/\\w+\\.py$</div></td></tr></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">postprocessing</td><td style="vertical-align:top;">:</td><td><div><table></table></div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_client</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_compression_level</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_cookie_expires</td><td style="vertical-align:top;">:</td><td><div>None</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_data_name</td><td style="vertical-align:top;">:</td><td><div>session_data_solapin</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_file</td><td style="vertical-align:top;">:</td><td><div>&lt;open file &#x27;C:\\\\Users\\\\Rosario\\\\PycharmProjects\\\\Solapin\\\\web2py\\\\applications\\\\Solapin\\\\sessions\\\\07a\\\\1ef\\\\127.0.0.1-0ef77f9c-2088-4749-ab82-72b2b5e9d74d&#x27;, mode &#x27;rb+&#x27; at 0x000000000A7FBED0&gt;</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_filename</td><td style="vertical-align:top;">:</td><td><div>C:\\Users\\Rosario\\PycharmProjects\\Solapin\\web2py\\applications\\Solapin\\sessions\\127.0.0.1-0ef77f9c-2088-4749-ab82-72b2b5e9d74d</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_hash</td><td style="vertical-align:top;">:</td><td><div>e431a153673d25962241e143fce2d3c2</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id</td><td style="vertical-align:top;">:</td><td><div>127.0.0.1-0ef77f9c-2088-4749-ab82-72b2b5e9d74d</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_id_name</td><td style="vertical-align:top;">:</td><td><div>session_id_solapin</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_locked</td><td style="vertical-align:top;">:</td><td><div>True</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_masterapp</td><td style="vertical-align:top;">:</td><td><div>Solapin</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_new</td><td style="vertical-align:top;">:</td><td><div>False</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">session_storage_type</td><td style="vertical-align:top;">:</td><td><div>file</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">status</td><td style="vertical-align:top;">:</td><td><div>200</div></td></tr><tr><td style="font-weight:bold;vertical-align:top;">view</td><td style="vertical-align:top;">:</td><td><div>default/generarvarios.html</div></td></tr></table></div>'
+tRp124
+sS'locals'
+p125
+(dp126
+S'Service'
+p127
+S"<class 'gluon.tools.Service'>"
+p128
+sS'PY2'
+p129
+S'True'
+p130
+sS'OBJECT'
+p131
+S"<class 'gluon.html.OBJECT'>"
+p132
+sS'SQLDB'
+p133
+S"<class 'pydal.base.DAL'>"
+p134
+sg117
+S"<Storage {'last_orderby': None, 'last_query': 'd...gin]': ['06d35eb9-a72e-43c5-a717-7d7a9af0a1b4']}>"
+p135
+sS'LINK'
+p136
+S"<class 'gluon.html.LINK'>"
+p137
+sS'BR'
+p138
+S"<class 'gluon.html.BR'>"
+p139
+sS'local_import'
+p140
+S'<function <lambda>>'
+p141
+sS'OPTGROUP'
+p142
+S"<class 'gluon.html.OPTGROUP'>"
+p143
+sS'__package__'
+p144
+S'None'
+p145
+sS'PRE'
+p146
+S"<class 'gluon.html.PRE'>"
+p147
+sS'IS_INT_IN_RANGE'
+p148
+S"<class 'gluon.validators.IS_INT_IN_RANGE'>"
+p149
+sS'to_bytes'
+p150
+S'<function to_bytes>'
+p151
+sS'IS_LOWER'
+p152
+S"<class 'gluon.validators.IS_LOWER'>"
+p153
+sS'IS_STRONG'
+p154
+S"<class 'gluon.validators.IS_STRONG'>"
+p155
+sS'cache'
+p156
+S'<gluon.cache.Cache object>'
+p157
+sS'IS_IN_DB'
+p158
+S"<class 'gluon.validators.IS_IN_DB'>"
+p159
+sS'TAG'
+p160
+S'<gluon.html.__TAG__ object>'
+p161
+sS'Scheduler'
+p162
+S"<class 'gluon.scheduler.Scheduler'>"
+p163
+sS'personas'
+p164
+S'<Rows (3273)>'
+p165
+sS'SQLField'
+p166
+S"<class 'pydal.objects.Field'>"
+p167
+sS'mail'
+p168
+S'<gluon.tools.Mail object>'
+p169
+sS'BODY'
+p170
+S"<class 'gluon.html.BODY'>"
+p171
+sS'IS_DATE_IN_RANGE'
+p172
+S"<class 'gluon.validators.IS_DATE_IN_RANGE'>"
+p173
+sS'IFRAME'
+p174
+S"<class 'gluon.html.IFRAME'>"
+p175
+sS'URL'
+p176
+S'<function URL>'
+p177
+sS'__file__'
+p178
+S"r'C:\\Users\\Rosario\\PycharmProjects\\Solapin\\web2py\\...ications\\Solapin\\views\\default/generarvarios.html'"
+p179
+sS'db'
+p180
+S'<DAL uri="sqlite://db.db">'
+p181
+sS'auth'
+p182
+S'<gluon.tools.Auth object>'
+p183
+sS'P'
+S"<class 'gluon.html.P'>"
+p184
+sS'T'
+S'<gluon.languages.translator object>'
+p185
+sS'iteritems'
+p186
+S'<function <lambda>>'
+p187
+sS'XHTML'
+p188
+S"<class 'gluon.html.XHTML'>"
+p189
+sS'ON'
+p190
+g130
+sS'OL'
+p191
+S"<class 'gluon.html.OL'>"
+p192
+sS'TEXTAREA'
+p193
+S"<class 'gluon.html.TEXTAREA'>"
+p194
+sS'MENU'
+p195
+S"<class 'gluon.html.MENU'>"
+p196
+sS'IS_IMAGE'
+p197
+S"<class 'gluon.validators.IS_IMAGE'>"
+p198
+sS'EM'
+p199
+S"<class 'gluon.html.EM'>"
+p200
+sS'CODE'
+p201
+S"<class 'gluon.html.CODE'>"
+p202
+sS'HTTP'
+p203
+S"<class 'gluon.http.HTTP'>"
+p204
+sS'HR'
+p205
+S"<class 'gluon.html.HR'>"
+p206
+sS'IS_DATETIME'
+p207
+S"<class 'gluon.validators.IS_DATETIME'>"
+p208
+sS'reduce'
+p209
+S'<built-in function reduce>'
+p210
+sS'STYLE'
+p211
+S"<class 'gluon.html.STYLE'>"
+p212
+sS'LABEL'
+p213
+S"<class 'gluon.html.LABEL'>"
+p214
+sS'CLEANUP'
+p215
+S"<class 'gluon.validators.CLEANUP'>"
+p216
+sS'SELECT'
+p217
+S"<class 'gluon.html.SELECT'>"
+p218
+sS'CENTER'
+p219
+S"<class 'gluon.html.CENTER'>"
+p220
+sS'Auth'
+p221
+S"<class 'gluon.tools.Auth'>"
+p222
+sS'__builtins__'
+p223
+S"{'ArithmeticError': <type 'exceptions.ArithmeticError'>, 'AssertionError': <type 'exceptions.AssertionError'>, 'AttributeError': <type 'exceptions.AttributeError'>, 'BaseException': <type 'exceptions.BaseException'>, 'BufferError': <type 'exceptions.BufferError'>, 'BytesWarning': <type 'exceptions.BytesWarning'>, 'DeprecationWarning': <type 'exceptions.DeprecationWarning'>, 'EOFError': <type 'exceptions.EOFError'>, 'Ellipsis': Ellipsis, 'EnvironmentError': <type 'exceptions.EnvironmentError'>, ...}"
+p224
+sS'HTML'
+p225
+S"<class 'gluon.html.HTML'>"
+p226
+sS'SQLFORM'
+p227
+S"<class 'gluon.sqlhtml.SQLFORM'>"
+p228
+sS'LOAD'
+p229
+S'<function LOAD>'
+p230
+sS'redirect'
+p231
+S'<function redirect>'
+p232
+sS'foto'
+p233
+S'[]'
+p234
+sS'FIELDSET'
+p235
+S"<class 'gluon.html.FIELDSET'>"
+p236
+sS'IS_EQUAL_TO'
+p237
+S"<class 'gluon.validators.IS_EQUAL_TO'>"
+p238
+sS'sexo'
+p239
+S"('Masculino', 'Feminino')"
+p240
+sS'embed64'
+p241
+S'<function embed64>'
+p242
+sS'IS_LIST_OF'
+p243
+S"<class 'gluon.validators.IS_LIST_OF'>"
+p244
+sS'INPUT'
+p245
+S"<class 'gluon.html.INPUT'>"
+p246
+sS'EMBED'
+p247
+S"<class 'gluon.html.EMBED'>"
+p248
+sS'configuration'
+p249
+S"{'host': {'names': 'localhost:*, 127.0.0.1:*, *:...': 'sqlite://storage.sqlite', 'pool_size': '10'}}"
+p250
+sS'cantSolapin'
+p251
+S'0'
+sS'H2'
+p252
+S"<class 'gluon.html.H2'>"
+p253
+sS'H3'
+p254
+S"<class 'gluon.html.H3'>"
+p255
+sS'AppConfig'
+p256
+S'<function AppConfig>'
+p257
+sS'H1'
+p258
+S"<class 'gluon.html.H1'>"
+p259
+sS'H6'
+p260
+S"<class 'gluon.html.H6'>"
+p261
+sS'H4'
+p262
+S"<class 'gluon.html.H4'>"
+p263
+sS'H5'
+p264
+S"<class 'gluon.html.H5'>"
+p265
+sS'UL'
+p266
+S"<class 'gluon.html.UL'>"
+p267
+sS'IS_UPPER'
+p268
+S"<class 'gluon.validators.IS_UPPER'>"
+p269
+sS'xmlescape'
+p270
+S'<function xmlescape>'
+p271
+sS'IS_TIME'
+p272
+S"<class 'gluon.validators.IS_TIME'>"
+p273
+sS'OPTION'
+p274
+S"<class 'gluon.html.OPTION'>"
+p275
+sS'TITLE'
+p276
+S"<class 'gluon.html.TITLE'>"
+p277
+sS'CRYPT'
+p278
+S"<class 'gluon.validators.CRYPT'>"
+p279
+sS'variables'
+p280
+S'[]'
+p281
+sS'dbTask'
+p282
+S'<DAL uri="sqlite://dbTask.db">'
+p283
+sS'IS_EMPTY_OR'
+p284
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p285
+sS'MARKMIN'
+p286
+S"<class 'gluon.html.MARKMIN'>"
+p287
+sS'__name__'
+p288
+S"'__restricted__'"
+p289
+sS'STRONG'
+p290
+S"<class 'gluon.html.STRONG'>"
+p291
+sS'COL'
+p292
+S"<class 'gluon.html.COL'>"
+p293
+sS'rows'
+p294
+S'<Rows (3273)>'
+p295
+sS'service'
+p296
+S'<gluon.tools.Service object>'
+p297
+sS'SCRIPT'
+p298
+S"<class 'gluon.html.SCRIPT'>"
+p299
+sS'TABLE'
+p300
+S"<class 'gluon.html.TABLE'>"
+p301
+sS'IS_IPV4'
+p302
+S"<class 'gluon.validators.IS_IPV4'>"
+p303
+sS'IS_LENGTH'
+p304
+S"<class 'gluon.validators.IS_LENGTH'>"
+p305
+sS'IS_IPV6'
+p306
+S"<class 'gluon.validators.IS_IPV6'>"
+p307
+sS'XML'
+p308
+S"<class 'gluon.html.XML'>"
+p309
+sS'B'
+S"<class 'gluon.html.B'>"
+p310
+sS'IMG'
+p311
+S"<class 'gluon.html.IMG'>"
+p312
+sS'SQLTABLE'
+p313
+S"<class 'gluon.sqlhtml.SQLTABLE'>"
+p314
+sS'IS_MATCH'
+p315
+S"<class 'gluon.validators.IS_MATCH'>"
+p316
+sS'IS_ALPHANUMERIC'
+p317
+S"<class 'gluon.validators.IS_ALPHANUMERIC'>"
+p318
+sS'__author__'
+p319
+S"'Rosario'"
+p320
+sS'_app'
+p321
+S"'Solapin'"
+p322
+sS'SPAN'
+p323
+S"<class 'gluon.html.SPAN'>"
+p324
+sS'IS_JSON'
+p325
+S"<class 'gluon.validators.IS_JSON'>"
+p326
+sS'IS_IPADDRESS'
+p327
+S"<class 'gluon.validators.IS_IPADDRESS'>"
+p328
+sS'IS_SLUG'
+p329
+S"<class 'gluon.validators.IS_SLUG'>"
+p330
+sS'BEAUTIFY'
+p331
+S"<class 'gluon.html.BEAUTIFY'>"
+p332
+sS'META'
+p333
+S"<class 'gluon.html.META'>"
+p334
+sS'BUTTON'
+p335
+S"<class 'gluon.html.BUTTON'>"
+p336
+sS'planificador'
+p337
+S'<Scheduler(Thread-362, initial daemon)>'
+p338
+sS'IS_DATE'
+p339
+S"<class 'gluon.validators.IS_DATE'>"
+p340
+sS'IS_EMAIL'
+p341
+S"<class 'gluon.validators.IS_EMAIL'>"
+p342
+sS'IS_NOT_EMPTY'
+p343
+S"<class 'gluon.validators.IS_NOT_EMPTY'>"
+p344
+sS'xrange'
+p345
+S"<type 'xrange'>"
+p346
+sS'TBODY'
+p347
+S"<class 'gluon.html.TBODY'>"
+p348
+sS'CAT'
+p349
+S"<class 'gluon.html.CAT'>"
+p350
+sS'Field'
+p351
+S"<class 'pydal.objects.Field'>"
+p352
+sS'IS_LIST_OF_EMAILS'
+p353
+S"<class 'gluon.validators.IS_LIST_OF_EMAILS'>"
+p354
+sg58
+S"<Storage {'function': 'generarvarios', 'cookies'...False, 'is_https': False, 'client': '127.0.0.1'}>"
+p355
+sS'DIV'
+p356
+S"<class 'gluon.html.DIV'>"
+p357
+sS'LEGEND'
+p358
+S"<class 'gluon.html.LEGEND'>"
+p359
+sS'to_native'
+p360
+S'<function to_native>'
+p361
+sS'COLGROUP'
+p362
+S"<class 'gluon.html.COLGROUP'>"
+p363
+sS'DAL'
+p364
+S"<class 'pydal.base.DAL'>"
+p365
+sS'ASSIGNJS'
+p366
+S'<function ASSIGNJS>'
+p367
+sS'TR'
+p368
+S"<class 'gluon.html.TR'>"
+p369
+sS'LI'
+p370
+S"<class 'gluon.html.LI'>"
+p371
+sS'TH'
+p372
+S"<class 'gluon.html.TH'>"
+p373
+sS'nombre'
+p374
+S'[]'
+p375
+sS'TD'
+p376
+S"<class 'gluon.html.TD'>"
+p377
+sS'IS_URL'
+p378
+S"<class 'gluon.validators.IS_URL'>"
+p379
+sS'A'
+S"<class 'gluon.html.A'>"
+p380
+sS'HEAD'
+p381
+S"<class 'gluon.html.HEAD'>"
+p382
+sS'IS_DATETIME_IN_RANGE'
+p383
+S"<class 'gluon.validators.IS_DATETIME_IN_RANGE'>"
+p384
+sS'FORM'
+p385
+S"<class 'gluon.html.FORM'>"
+p386
+sS'I'
+S"<class 'gluon.html.I'>"
+p387
+sS'IS_NOT_IN_DB'
+p388
+S"<class 'gluon.validators.IS_NOT_IN_DB'>"
+p389
+sS'grava'
+p390
+S'<function grava>'
+p391
+sS'tarea_insertar_actualizacion'
+p392
+S'<function tarea_insertar_actualizacion>'
+p393
+sg123
+S"<Storage {'body': <cStringIO.StringO object at 0...045373C8>, 'view': 'default/generarvarios.html'}>"
+p394
+sS'THEAD'
+p395
+S"<class 'gluon.html.THEAD'>"
+p396
+sS'ANY_OF'
+p397
+S"<class 'gluon.validators.ANY_OF'>"
+p398
+sS'IS_NULL_OR'
+p399
+S"<class 'gluon.validators.IS_EMPTY_OR'>"
+p400
+sS'solapin'
+p401
+S'[]'
+p402
+sS'TFOOT'
+p403
+S"<class 'gluon.html.TFOOT'>"
+p404
+sS'IS_FLOAT_IN_RANGE'
+p405
+S"<class 'gluon.validators.IS_FLOAT_IN_RANGE'>"
+p406
+sS'IS_EXPR'
+p407
+S"<class 'gluon.validators.IS_EXPR'>"
+p408
+sS'IS_IN_SET'
+p409
+S"<class 'gluon.validators.IS_IN_SET'>"
+p410
+sS'IS_UPLOAD_FILENAME'
+p411
+S"<class 'gluon.validators.IS_UPLOAD_FILENAME'>"
+p412
+sS'time'
+p413
+S"<module 'time' (built-in)>"
+p414
+sS'categoria'
+p415
+S'[]'
+p416
+sS'TT'
+p417
+S"<class 'gluon.html.TT'>"
+p418
+sS'IS_DECIMAL_IN_RANGE'
+p419
+S"<class 'gluon.validators.IS_DECIMAL_IN_RANGE'>"
+p420
+sssS'traceback'
+p421
+S'Traceback (most recent call last):\n  File "C:\\Users\\Rosario\\PycharmProjects\\Solapin\\web2py\\gluon\\restricted.py", line 219, in restricted\n    exec(ccode, environment)\n  File "C:\\Users\\Rosario\\PycharmProjects\\Solapin\\web2py\\applications\\Solapin\\views\\default/generarvarios.html", line 128, in <module>\n    //////////////////\nIndexError: list index out of range\n'
+p422
+s.

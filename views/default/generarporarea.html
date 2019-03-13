@@ -1,0 +1,213 @@
+{{extend 'layoutP.html'}}
+<html>
+<head>
+      <meta charset="utf-8" />
+    <meta http-equiv=Content-Type content="text/html;">
+    <link rel="stylesheet" href="{{=URL('static','assets/solapin.css')}}"/>
+
+    <!-- page specific plugin styles -->
+    <link rel="stylesheet" href="{{=URL('static','assets/css/bootstrap-duallistbox.min.css')}}"/>
+    <link rel="stylesheet" href="{{=URL('static','assets/css/bootstrap-multiselect.min.css')}}"/>
+    <link rel="stylesheet" href="{{=URL('static','assets/css/select2.min.css')}}"/>
+
+    <script src="{{=URL('static','assets/jspdf/html2pdf.min.js')}}"></script>
+    <script src="{{=URL('static','assets/jspdf/html2canvas.js')}}"></script>
+    <script src="{{=URL('static','assets/jspdf/jspdf.min.js')}}"></script>
+    <script type="text/javascript">
+        $(".my_select_box").chosen({
+            placeholder_text_multiple: 10,
+            no_results_text: "Oops, nothing found!",
+            width: "95%"
+        });
+        function genPDF2() {
+            var element = document.getElementById('jqSegmentedDisplay');
+            var opt = {
+                margin: [0, 0, 0.1, 0],
+                padding: [0, 0.5, 0, 0],
+                filename: 'solapin.pdf',
+                image: {type: 'jpeg', quality: 1},
+                html2canvas: {scale: 3},
+                jsPDF: {unit: 'in', format: 'letter', orientation: 'portrait'}
+            };
+// New Promise-based usage:
+            html2pdf().from(element).set(opt).save();
+// Old monolithic-style usage:
+            // html2pdf(element, opt);
+        }
+    </script>
+    <title>Título de la página</title>
+
+</head>
+<body>
+<label style="font-size: large">Seleccione la(s) areas que desea generar las identificaciones</label>
+<br>
+
+<form method="post" class="form-horizontal" role="form">
+    <label class="control-label no-padding-right"> Seleccionar Area </label>
+
+        <select multiple="multiple" id="state" name="ci" class="select2" data-placeholder="Digite el nombre...">
+        {{for area in areas:}}
+            <option value="{{=area.id}}">{{=area.area}}</option>
+        {{pass}}
+        </select>
+
+    <input class="btn btn-primary radius-4 " type="submit" value="Generar Solapin">
+</form>
+
+<a href="javascript:genPDF2()"  class="btn btn-primary radius-4">
+    Generar PDF
+    <i class="ace-icon fa fa-cog bigger-130"></i></a>
+
+<hr>
+<div id="jqSegmentedDisplay">
+
+{{for i in range(0,cantSolapin):}}
+{{#for i in range(1,30):}}
+
+    <div id="solapin">
+    {{=DIV(IMG(_src = URL("static", "imgsolapin/fundo.png"), _width = "210", _height = "322",_id="imgSolapin"),_id="fundo")}}
+        {{=DIV(IMG(_src = URL("static", "imgsolapin/fundoFoto.png"), _width = "119", _height = "140",_id="imgSolapin"),_id="fundoFoto")}}
+        {{=DIV(IMG(_src = URL("download", args=foto[i]), _width = "116", _height = "126",_id="imgSolapin"),_id="foto")}}
+        {{if ((categoria[i]=='Becado Nacional') or( categoria[i]=='Seminterno' ) or (categoria[i]=='Becado Extranjero Convenio') or categoria[i]=='Becado Extranjero Autofinanciado' ):}}
+        {{=DIV(IMG(_src = URL("static", "imgsolapin/lateralIzquierdo.png")),_id="lateralIzquierdo")}}
+        {{=DIV(B('E', id='lateralDerecho',_class='test', _id='lateralDerecho'))}}
+        {{elif categoria[i]=='Trabajador':}}
+        {{=DIV(IMG(_src = URL("static", "imgsolapin/lateralIzquierdo.png")),_id="lateralIzquierdo")}}
+        {{=DIV(B('T', id='lateralDerecho',_class='test', _id='lateralDerecho'))}}
+         {{elif categoria[i]=='Visita':}}
+        {{=DIV(IMG(_src = URL("static", "imgsolapin/lateralIzquierdo.png")),_id="lateralIzquierdo")}}
+        {{=DIV(B('V', id='lateralDerecho',_class='test', _id='lateralDerecho'))}}
+        {{else:}}
+        {{=DIV(IMG(_src = URL("static", "imgsolapin/lateralIzquierdo.png")),_id="lateralIzquierdo")}}
+        {{=DIV(B('P', id='lateralDerecho',_class='test', _id='lateralDerecho'))}}
+        {{pass}}
+
+        {{=DIV(P(nombre[i]),_id="nombre")}}
+        {{=DIV(IMG(_src = URL("static", "imgsolapin/linea.png")),_id="linea")}}
+        {{=DIV(IMG(_src = URL("static", "imgsolapin/unicaLateral.png"),_height="129"),_id="unicaLateral")}}
+        {{=DIV(IMG(_src =solapin[i],_width="121",_height="121"),_id="qr")}}
+
+    </div>
+{{pass}}
+</div>
+
+
+<!-- page specific plugin scripts -->
+<script src="{{=URL('static','assets/js/jquery.bootstrap-duallistbox.min.js')}}"></script>
+<script src="{{=URL('static','assets/js/jquery.raty.min.js')}}"></script>
+<script src="{{=URL('static','assets/js/bootstrap-multiselect.min.js')}}"></script>
+<script src="{{=URL('static','assets/js/select2.min.js')}}"></script>
+<script src="{{=URL('static','assets/js/jquery-typeahead.js')}}"></script>
+
+<!-- inline scripts related to this page -->
+<script type="text/javascript">
+    jQuery(function ($) {
+        var demo1 = $('select[name="duallistbox_demo1[]"]').bootstrapDualListbox({infoTextFiltered: '<span class="label label-purple label-lg">Filtered</span>'});
+        var container1 = demo1.bootstrapDualListbox('getContainer');
+        container1.find('.btn').addClass('btn-white btn-info btn-bold');
+
+        /**var setRatingColors = function() {
+					$(this).find('.star-on-png,.star-half-png').addClass('orange2').removeClass('grey');
+					$(this).find('.star-off-png').removeClass('orange2').addClass('grey');
+				}*/
+        $('.rating').raty({
+            'cancel': true,
+            'half': true,
+            'starType': 'i'
+            /**,
+
+             'click': function() {
+						setRatingColors.call(this);
+					},
+             'mouseover': function() {
+						setRatingColors.call(this);
+					},
+             'mouseout': function() {
+						setRatingColors.call(this);
+					}*/
+        })//.find('i:not(.star-raty)').addClass('grey');
+
+
+        //////////////////
+        //select2
+        $('.select2').css('width', '200px').select2({allowClear: true})
+        $('#select2-multiple-style .btn').on('click', function (e) {
+            var target = $(this).find('input[type=radio]');
+            var which = parseInt(target.val());
+            if (which == 2) $('.select2').addClass('tag-input-style');
+            else $('.select2').removeClass('tag-input-style');
+        });
+
+        //////////////////
+        $('.multiselect').multiselect({
+            enableFiltering: true,
+            enableHTML: true,
+            buttonClass: 'btn btn-white btn-primary',
+            templates: {
+                button: '<button type="button" class="multiselect dropdown-toggle" data-toggle="dropdown"><span class="multiselect-selected-text"></span> &nbsp;<b class="fa fa-caret-down"></b></button>',
+                ul: '<ul class="multiselect-container dropdown-menu"></ul>',
+                filter: '<li class="multiselect-item filter"><div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span><input class="form-control multiselect-search" type="text"></div></li>',
+                filterClearBtn: '<span class="input-group-btn"><button class="btn btn-default btn-white btn-grey multiselect-clear-filter" type="button"><i class="fa fa-times-circle red2"></i></button></span>',
+                li: '<li><a tabindex="0"><label></label></a></li>',
+                divider: '<li class="multiselect-item divider"></li>',
+                liGroup: '<li class="multiselect-item multiselect-group"><label></label></li>'
+            }
+        });
+
+
+        ///////////////////
+
+        //typeahead.js
+        //example taken from plugin's page at: https://twitter.github.io/typeahead.js/examples/
+        var substringMatcher = function (strs) {
+            return function findMatches(q, cb) {
+                var matches, substringRegex;
+
+                // an array that will be populated with substring matches
+                matches = [];
+
+                // regex used to determine if a string contains the substring `q`
+                substrRegex = new RegExp(q, 'i');
+
+                // iterate through the pool of strings and for any string that
+                // contains the substring `q`, add it to the `matches` array
+                $.each(strs, function (i, str) {
+                    if (substrRegex.test(str)) {
+                        // the typeahead jQuery plugin expects suggestions to a
+                        // JavaScript object, refer to typeahead docs for more info
+                        matches.push({value: str});
+                    }
+                });
+
+                cb(matches);
+            }
+        }
+
+        $('input.typeahead').typeahead({
+            hint: true,
+            highlight: true,
+            minLength: 1
+        }, {
+            name: 'states',
+            displayKey: 'value',
+            source: substringMatcher(ace.vars['US_STATES']),
+            limit: 10
+        });
+
+
+        ///////////////
+
+
+        //in ajax mode, remove remaining elements before leaving page
+        $(document).one('ajaxloadstart.page', function (e) {
+            $('[class*=select2]').remove();
+            $('select[name="duallistbox_demo1[]"]').bootstrapDualListbox('destroy');
+            $('.rating').raty('destroy');
+            $('.multiselect').multiselect('destroy');
+        });
+
+    });
+</script>
+</body>
+</html>
+

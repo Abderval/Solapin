@@ -1,0 +1,127 @@
+{{block head}}
+{{end}}
+
+
+    {{block page_js}}
+    <script src="{{=URL('static','assets/jspdf/html2pdf.min.js')}}"></script>
+    <script src="{{=URL('static','assets/jspdf/html2canvas.js')}}"></script>
+    <script src="{{=URL('static','assets/jspdf/jspdf.min.js')}}"></script>
+    <script type="text/javascript">
+
+
+        function imprSelec(jqSegmentedDisplay) {
+        var ficha = document.getElementById(jqSegmentedDisplay);
+        var ventimp = window.open(' ', 'popimpr');
+        ventimp.document.write(ficha.innerHTML);
+        ventimp.document.close();
+        ventimp.print();
+        ventimp.close();
+    }
+
+        function genPDF2() {
+            var element = document.getElementById('jqSegmentedDisplay');
+            var opt = {
+                margin: [0, 0, 0.53, 0],
+                padding: [0, 0, 0, 0],
+                filename: 'solapin.pdf',
+                image: {type: 'jpeg', quality: 1},
+                html2canvas: {scale: 3},
+                jsPDF: {unit: 'in', format: 'letter', orientation: 'portrait'}
+            };
+// New Promise-based usage:
+            html2pdf().from(element).set(opt).save();
+// Old monolithic-style usage:
+            // html2pdf(element, opt);
+        }
+
+         function genPDFTodos() {
+        var cargando = $(".loader");
+
+        var cant = parseInt("{{=varId}}");
+
+        cargando.show();
+
+        var max = cant;
+        var cnt = 0;
+
+        asyncTask(cnt, function callback(value, result) {
+            console.log('END execution with value =', value, 'and result =', result);
+            if (++cnt > max) {
+                console.log('COMPLETED');
+                cargando.hide()
+            } else {
+                asyncTask(cnt, callback);
+            }
+        });
+
+// New Promise-based usage:
+//        html2pdf().from(element2).set(opt).save();
+
+// Old monolithic-style usage:
+        // html2pdf(element, opt);
+    }
+
+    function asyncTask(value, callback) {
+//        console.log('START execution with value =', value);
+        console.log('Generando pdf: ', value);
+        var element = document.getElementById(value.toString());
+        var opt = {
+            margin: [1.16, 0.2, 1, 0.2],
+            filename: 'fichero' + value + '.pdf',
+            image: {type: 'jpeg', quality: 0.50},
+            html2canvas: {scale: 3},
+            jsPDF: {unit: 'in', format: 'letter', orientation: 'portrait'}
+        };
+
+        setTimeout(function () {
+            html2pdf().from(element).set(opt).save();
+            callback(value);
+        }, 0 | Math.random() * 100);
+    }
+
+    </script>
+          {{end}}
+{{extend 'layoutP.html'}}
+<a href="javascript:genPDF2()" class="btn btn-primary">Generar Pagina</a>
+<a href="javascript:genPDFTodos()" class="btn btn-primary">Generar Todos</a>
+
+
+<div style="position: relative; width: 100%" id="jqSegmentedDisplay">
+
+
+{{varId = 0}}
+{{cant = cantSolapin}}
+{{while i <= cant-1:}}
+{{varId += 1}}
+    <div id="{{=varId}}">
+    {{while i <= cant-1  != 0:}}
+        <div id="solapin">
+        {{=DIV(IMG(_src = URL("static", "imgsolapin/fundo.png"), _width = "210", _height = "322",_id="imgSolapin"),_id="fundo")}}
+        {{=DIV(IMG(_src = URL("static", "imgsolapin/fundoFoto.png"), _width = "119", _height = "140",_id="imgSolapin"),_id="fundoFoto")}}
+        {{=DIV(IMG(_src = URL("download", args=foto[i]), _width = "116", _height = "126",_id="imgSolapin"),_id="foto")}}
+        {{if ((categoria[i]=='Becado Nacional') or( categoria[i]=='Seminterno' ) or (categoria[i]=='Becado Extranjero Convenio') or categoria[i]=='Becado Extranjero Autofinanciado' ):}}
+        {{=DIV(IMG(_src = URL("static", "imgsolapin/lateralIzquierdo.png")),_id="lateralIzquierdo")}}
+        {{=DIV(B('E', id='lateralDerecho',_class='test', _id='lateralDerecho'))}}
+        {{elif categoria[i]=='Trabajador':}}
+        {{=DIV(IMG(_src = URL("static", "imgsolapin/lateralIzquierdo.png")),_id="lateralIzquierdo")}}
+        {{=DIV(B('T', id='lateralDerecho',_class='test', _id='lateralDerecho'))}}
+        {{else:}}
+        {{=DIV(IMG(_src = URL("static", "imgsolapin/lateralIzquierdo.png")),_id="lateralIzquierdo")}}
+        {{=DIV(B('P', id='lateralDerecho',_class='test', _id='lateralDerecho'))}}
+        {{pass}}
+
+        {{=DIV(IMG(_src = URL("static", "imgsolapin/lateralDerecho.png")),_id="lateralDerecho")}}
+        {{=DIV(P(nombre[i]),_id="nombre")}}
+        {{=DIV(IMG(_src = URL("static", "imgsolapin/linea.png")),_id="linea")}}
+        {{=DIV(IMG(_src = URL("static", "imgsolapin/unicaLateral.png"),_height="129"),_id="unicaLateral")}}
+        {{=DIV(IMG(_src =solapin[i],_width="121",_height="121"),_id="qr")}}
+
+        </div>
+    {{i += 1}}
+    {{pass}}
+
+    </div>
+{{i += 1}}
+{{pass}}
+</div>
+

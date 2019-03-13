@@ -1,0 +1,56 @@
+__author__ = 'Rosario'
+import csv
+
+def importarcsv():
+    form = FORM(INPUT(_type='file',_name='csvfile'),INPUT(_type='submit',_class="btn btn-primary"))
+
+    if form.process().accepted:
+        file = request.vars.csvfile.file
+        #with open(file) as csvfile:
+        readCSV = csv.reader(file, delimiter=';')
+        next(readCSV, None)
+        for row in readCSV:
+                #insertar las nacionalidades sin repetir
+                nacionalidad = {'nacionalidad':row[3]}
+                registro = db.Nacionalidad(**db.Nacionalidad._filter_fields(nacionalidad)) # Check for a match.
+                nacionalid_id = registro.id if registro else db.Nacionalidad.insert(**db.Nacionalidad._filter_fields(nacionalidad))
+
+                 #insertar los tipos de persona sin repetir
+
+                tipoPersona = {'tipo':row[27]}
+                registroTipo = db.Tipo_Persona(**db.Tipo_Persona._filter_fields(tipoPersona)) # Check for a match.
+                tipoPersona_id = registroTipo.id if registroTipo else db.Tipo_Persona.insert(**db.Tipo_Persona._filter_fields(tipoPersona))
+
+                  #insertar Area sin repetir
+                area = {'area':row[4]}
+                registroArea = db.Area(**db.Area._filter_fields(area)) # Check for a match.
+                area_id = registroArea.id if registroArea else db.Area.insert(**db.Area._filter_fields(area))
+
+                resultQueryNacionalidad = db().select(db.Nacionalidad.id, db.Nacionalidad.nacionalidad)
+                resultQueryTipoPersona = db().select(db.Tipo_Persona.id, db.Tipo_Persona.tipo)
+                resultQueryArea = db().select(db.Area.id, db.Area.area)
+
+                idTipoPersona=None
+                #busca el tipo de person e sale cuando la encuentra
+                for lineaT in resultQueryTipoPersona:
+                    if row[27]==lineaT.tipo:
+                        idTipoPersona=lineaT.id
+                        break
+
+                idArea=None
+                #busca el Area e sale cuando la encuentra
+                for lineaA in resultQueryArea:
+                    if row[4]==lineaA.area.decode('latin_1').encode('utf_8'):
+                        idArea=lineaA.id
+                        break
+
+                #busca la nacionalidad que es igual en el fichero csv e inserta el record completo
+                for linea in resultQueryNacionalidad:
+                    if row[3]==linea.nacionalidad:
+                        idPais=linea.id
+                        #'sexo':row[25],
+                        persona ={'ci':row[0],'nombre':row[1],'apellidos':row[2],'id_Nacionalidad':idPais,
+                                  'id_tipo_Persona':idTipoPersona,'id_Area':idArea}
+                        registroP = db.Persona(**db.Persona._filter_fields(persona)) # Check for a match.
+                        Persona_id = registroP.ci if registroP else db.Persona.insert(**db.Persona._filter_fields(persona))
+    return locals()

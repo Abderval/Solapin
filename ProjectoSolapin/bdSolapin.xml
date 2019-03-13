@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- SQL XML created by WWW SQL Designer, http://code.google.com/p/wwwsqldesigner/ -->
+<!-- Active URL: file:///E:/Pr%C3%A1ticas%20profesional%20Bio-Planta1/Desarrollo%20-%20Bioplantas/wwwsqldesigner-2.7/wwwsqldesigner-2.7/index.html -->
+<sql>
+<datatypes db="web2py">
+	<group label="Numeric" color="rgb(238,238,170)">
+		<type label="Integer" length="1" sql="integer" re="INTEGER" quote=""/>
+		<type label="Double precision" length="1" sql="double" re="DOUBLE" quote=""/>
+	</group>
+	<group label="Character" color="rgb(255,200,200)">
+		<type label="String" length="1" sql="string" quote="'"/>
+		<type label="Text" length="1" sql="text" quote="'"/>
+		<type label="BLOB" length="1" sql="blob" quote="'"/>
+	</group>
+	<group label="Date &amp; Time" color="rgb(200,255,200)">
+		<type label="Time" length="0" sql="time" quote="'"/>
+		<type label="Date" length="0" sql="date" quote="'"/>
+		<type label="Datetime" length="0" sql="datetime" quote="'"/>
+	</group>
+	<group label="Miscellaneous" color="rgb(200,200,255)">
+		<type label="Boolean" length="0" sql="boolean" quote=""/>
+		<type label="Upload" length="0" sql="upload" quote=""/>
+		<type label="Password" length="0" sql="password" quote=""/>
+	</group>
+</datatypes><table x="634" y="445" name="tipo_Persona">
+<row name="tipo" null="1" autoincrement="0">
+<datatype>integer</datatype>
+<default>NULL</default></row>
+<row name="id" null="0" autoincrement="0">
+<datatype>integer</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+<comment>Representa culquier entidad de la universidad ciego de avila, ya sea estudiante, profesor o trabajador</comment>
+</table>
+<table x="887" y="231" name="Nacionalidad">
+<row name="id" null="1" autoincrement="1">
+<datatype>integer</datatype>
+<default>NULL</default></row>
+<row name="nacionalidad" null="1" autoincrement="0">
+<datatype>string(100)</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+<comment>Representa las diferentes nacionalidades existentes en la Unica</comment>
+</table>
+<table x="443" y="74" name="Vehiculo">
+<row name="id" null="0" autoincrement="1">
+<datatype>integer</datatype>
+<default>NULL</default></row>
+<row name="nombreVehiculo" null="1" autoincrement="0">
+<datatype>string</datatype>
+<default>NULL</default></row>
+<row name="chapa" null="1" autoincrement="0">
+<datatype>string(40)</datatype>
+<default>NULL</default></row>
+<row name="id_Persona" null="1" autoincrement="0">
+<datatype>integer</datatype>
+<default>NULL</default><relation table="Persona" row="id" />
+</row>
+<row name="id_Tipo_Vehiculo" null="1" autoincrement="0">
+<datatype>integer</datatype>
+<default>NULL</default><relation table="Tipo_Vehiculo" row="id" />
+</row>
+<row name="descripcion" null="1" autoincrement="0">
+<datatype>string</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+<comment>Representa los vehiculos que una persona posee</comment>
+</table>
+<table x="469" y="390" name="Area">
+<row name="id" null="1" autoincrement="1">
+<datatype>integer</datatype>
+<default>NULL</default></row>
+<row name="nombre_Area" null="1" autoincrement="0">
+<datatype>string</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="654" y="70" name="Persona">
+<row name="id" null="1" autoincrement="1">
+<datatype>integer</datatype>
+<default>NULL</default></row>
+<row name="nombre" null="0" autoincrement="0">
+<datatype>string</datatype>
+<default>'NULL'</default></row>
+<row name="ci" null="1" autoincrement="0">
+<datatype>double</datatype>
+<default>NULL</default></row>
+<row name="foto" null="1" autoincrement="0">
+<datatype>string</datatype>
+<default>NULL</default></row>
+<row name="apelido1" null="1" autoincrement="0">
+<datatype>string</datatype>
+<default>NULL</default></row>
+<row name="apellido2" null="1" autoincrement="0">
+<datatype>string</datatype>
+<default>NULL</default></row>
+<row name="sexo" null="0" autoincrement="0">
+<datatype>string</datatype>
+<default>'NULL'</default></row>
+<row name="id_Nacionalidad" null="1" autoincrement="0">
+<datatype>integer</datatype>
+<default>NULL</default><relation table="Nacionalidad" row="id" />
+</row>
+<row name="id_tipo_Persona" null="0" autoincrement="0">
+<datatype>integer</datatype>
+<default>NULL</default><relation table="tipo_Persona" row="id" />
+</row>
+<row name="id_Area" null="1" autoincrement="0">
+<datatype>integer</datatype>
+<default>NULL</default><relation table="Area" row="id" />
+</row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="235" y="77" name="Tipo_Vehiculo">
+<row name="id" null="1" autoincrement="1">
+<datatype>integer</datatype>
+<default>NULL</default></row>
+<row name="nombre" null="1" autoincrement="0">
+<datatype>integer</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="227" y="391" name="sub_area">
+<row name="id" null="1" autoincrement="1">
+<datatype>integer</datatype>
+<default>NULL</default></row>
+<row name="nombre" null="1" autoincrement="0">
+<datatype>string</datatype>
+<default>NULL</default></row>
+<row name="id_Area" null="1" autoincrement="0">
+<datatype>integer</datatype>
+<default>NULL</default><relation table="Area" row="id" />
+</row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+</sql>
